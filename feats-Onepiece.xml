@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats-Onepiece</name>
+		<description></description>
+		<author url="https://homebrewery.naturalcrit.com/share/HkRwCRCxU">u/Mr-Silvers and Eiichiro Oda</author>
+		<update version="3.1.1">
+			<file name="feats-onepiece.xml" url="https://homebrewery.naturalcrit.com/share/HkRwCRCxU"/>
+		</update>
+	</info>
+
+
+	<element name="Voice of All Things" type="Feat" source="One Piece Homebrew" id="ID_OP_FEAT_VOICE_OF_ALL_THINGS">
+		<prerequisite>Special</prerequisite>
+		<requirements>ID_OP_SUB_RACE_HUMAN_THREE_EYE_TRIBE||ID_OP_GRANTS_FEAT_UNLOCKER</requirements>
+		<description>
+			<p><i>Prerequisite: Special</i></p>
+			<p>The voice of all things is not technically related to Haki, however it follows a very similar pattern in that only a fewindividuals ever have the opportunity to unlock it. Dungeon Masters are free to grant this feat to players when they meet the prerequisites for Basic Haki feats. The voice of all things grants you the following benefits:</p>
+			<ul>
+				<li><span class="feature">Universal Language.</span>You have an innate ability to hear the "voice" of animals and inanimate objects, instinctually understanding the meaning behind the sounds and gestures of animals, or any imagery or written language upon an object, including poneglyphs. You gain no additional benefits to communicate back with beasts and objects through this feature, nor any ability to coerce them to communicate with you.</li>
+				<li><span class="feature">Guidance of the World.</span>Once, you can ask the DM one question relegated to a specific object, place or creature that you are trying to find. The DM then gives you one truthful answer that guides you in the direction of the thing you are looking for. You are not made aware of any dangers waiting on the path, nor does the answer you recieve take into account any changes that might as a result of an action taken by another player or NPC. Once you use this feature, you cannot do so again until 7 days have passed since you last used it.</li>
+			</ul>
+		</description>
+		<sheet display="false"/>
+		<rules>
+            <grant type="Feat Feature" id="ID_OP_FEAT_FEATURE_VOICE_OF_ALL_THINGS_UNIVERSAL_LANGUAGE" />
+            <grant type="Feat Feature" id="ID_OP_FEAT_FEATURE_VOICE_OF_ALL_THINGS_GUIDANCE_OF_THE_WORLD" />
+        </rules>
+	</element>
+
+	<element name="Universal Language" type="Feat Feature" source="One Piece Homebrew" id="ID_OP_FEAT_FEATURE_VOICE_OF_ALL_THINGS_UNIVERSAL_LANGUAGE">
+		<description>
+		<p>You have an innate ability to hear the "voice" of animals and inanimate objects, instinctually understanding the meaning behind the sounds and gestures of animals, or any imagery or written language upon an object, including poneglyphs. You gain no additional benefits to communicate back with beasts and objects through this feature, nor any ability to coerce them to communicate with you.</p>
+		</description>
+		<sheet>
+			<description>
+			<p>You have an innate ability to hear the "voice" of animals and inanimate objects, instinctually understanding the meaning behind the sounds and gestures of animals, or any imagery or written language upon an object, including poneglyphs. You gain no additional benefits to communicate back with beasts and objects through this feature, nor any ability to coerce them to communicate with you.</p>
+			</description>
+		</sheet>
+	</element>
+
+	<element name="Guidance of the World" type="Feat Feature" source="One Piece Homebrew" id="ID_OP_FEAT_FEATURE_VOICE_OF_ALL_THINGS_GUIDANCE_OF_THE_WORLD">
+		<description>
+		<p>Once, you can ask the DM one question relegated to a specific object, place or creature that you are trying to find. The DM then gives you one truthful answer that guides you in the direction of the thing you are looking for. You are not made aware of any dangers waiting on the path, nor does the answer you recieve take into account any changes that might as a result of an action taken by another player or NPC. Once you use this feature, you cannot do so again until 7 days have passed since you last used it.</p>
+		</description>
+		<sheet usage="1/7 Days">
+			<description>
+			<p>Once, you can ask the DM one question relegated to a specific object, place or creature that you are trying to find. The DM then gives you one truthful answer that guides you in the direction of the thing you are looking for. You are not made aware of any dangers waiting on the path, nor does the answer you recieve take into account any changes that might as a result of an action taken by another player or NPC. Once you use this feature, you cannot do so again until 7 days have passed since you last used it.</p>
+			</description>
+		</sheet>
+	</element>
+
+	<!-- Feat Unlocker -->
+	<element name="Feat Unlocker" type="Item" source="One Piece Homebrew" id="ID_OP_ITEM_FEAT_UNLOCKER">
+		<compendium display="false" />
+		<description>
+			<p>Once equipped, this item allows you to ignore prerequisites for Special Feats</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_OP_GRANTS_FEAT_UNLOCKER" />
+		</rules>
+	</element>
+
+	<element name="Feat Unlocker" type="Grants" source="One Piece Homebrew" id="ID_OP_GRANTS_FEAT_UNLOCKER" />
+	
+</elements>
+
+
+

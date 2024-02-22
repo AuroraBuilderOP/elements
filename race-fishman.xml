@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Fishman</name>
+		<description></description>
+		<author url="https://homebrewery.naturalcrit.com/share/HkRwCRCxU">u/Mr-Silvers and Eiichiro Oda</author>
+		<update version="3.1.1">
+			<file name="race-fishman.xml" url="https://homebrewery.naturalcrit.com/share/HkRwCRCxU"/>
+		</update>
+	</info>
+
+    <element name="Fishman" type="Race" source="One Piece Homebrew" id="ID_OP_RACE_FISHMAN">
+		<description>
+			<p class="flavor">Ten times stronger than the common man and undisputed monarchs of the sea, the fishmen of the world oceans were for the longest time the boogeymen of sailors everywhere. Tall and proud warriors of the deep, the fishmen share a troubled history of racial discrimination and slavery at the hands of humans, scars that even centuries of peace with the surface world has yet to completely mend.<br/>  A lot of the prejudice against them stem from how they differ from humans, looking monstrous to the common man because of their half-fish, half-human physiology, but also because of their renowned physical superiority and ability to fight as well on land as in water.<br/>  Despite their fearsome reputation as pirates and marauders, the fishmen are not a simple or militaristic raceof savages that many humans believe them to be. A fishman dedicated to a crew or a cause tends to be loyal to a fault, willing to fight to the bitter end for what they believe in. </p>
+		
+			<h4>A HISTORY OF STRIFE</h4>
+			<p>For centuries, the fishmen were considered little more than any other monster in the oceans by the humans and were treated accordingly, only welcome on the surface world as slaves if they weren't killed on sight. Eventually, the world government realized the benefits of peace between the races and made several attempts to mend the relationship between humans, fishmen and merfolk. Thanks in part to the actions of the fishman pirate Fisher Tiger and the merfolk queen Otohime, a peaceful coexistance was finally reached after decades of negotiations.<br/>  However, the old ways still rings loudly in the ears of both humans and fishmen alike, who have had a hard time leaving the past behind. Many humans, especially nobles, still consider fishmen to be nothing but monsters and fish. Conversely, many fishmen subscribe to the notion that their superior strength and adaptability means they should be ruling over humans, who they consider weak and cowardly.<br/> Even so, a strained peace still aided in softening the animosity between the races, and more fishmen and humans alike are beginning to wake up to the idea of co-existance, slowly beginning to see eachother as kin rather than enemies</p>
+				
+			<h4>CHAMPIONS OF THE SEA</h4>
+			<p>In water, fishmen are second to none. Already on land a fishman can boast the strength of ten common humans, and this strength is only amplified by their amphibious nature. A fishman possesses both the gills of a fish and the respiratory system of a human, allowing them to breath air and water without issue, while dorsal fins and webbed hands and feet allow them to move unhindered in water.<br/>  In addition to these boons, fishmen have a unique form of martial arts known as Fishman Karate, which emphasizes the use of water to their advantage. It's a martial art that grows even more potent while near or submerged in water. This unique fighting style is only taught at certain dojos on fishman island and has a near mythical reputation that eaches even the surface world above.</p>
+
+			<p>
+				<span class="feature">Ability Score Increase.</span>One ability score of your choice increases by 2, and another one increases by 1. Alternatively,three ability scores of your choice increase by 1.<br />
+				<span class="feature">Age.</span>Fishmen reach adulthood in their late teens and live less than a century.<br />
+                <span class="feature">Alignment.</span>Fishmen display extremes on the moral scales, with good-aligned fishmen typically being chaotic good with a great emphasis on personal freedom, while evil-aligned fishmen tend towards lawful evil with the ideals that their superior physique means they should rule over other races.<br />
+				<span class="feature">Size.</span>Fishmen vary greatly in size, standing anywhere between 7-8 to well over 15 feet. Your size is medium.<br />
+				<span class="feature">Speed.</span>Your base walking speed is 30 feet, and you have a swimming speed equal to your walking speed. <br />
+				<span class="feature">Languages.</span>You can speak, read, and write Common and one extra language of your choice. Fishmen typically learn the languages of other peoples they deal with, including obscure dialects.<br />
+				<span class="feature">Aquatic Adaptation.</span>You can breathe air and water. You have advantage on all Strength (Athletic) ability checks made while in water. <br />
+				<span class="feature">Darkvision.</span>Accustomed to the dark ocean floors where light is scarce, you have darkvision out to 60 feet and can see in dim light as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.<br/>
+                <span class="feature">Powerful Build.</span>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.<br/>
+                <span class="feature">Speach Of The Sea.</span>You can communicate simple ideas and words to creatures with a natural swimming speed that are of large size or smaller. Most sealife lack the ability to form or understand complicated messages, but can communicate simple expressions such as fear, hunger or joy.<br/>
+                <span class="feature">Subrace.</span>Choose between  sharptooth, stronghide or multipod.<br />
+			</p>        
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="names-format">{{name}} {{surname}}</set>
+			<set name="height" modifier="3d6">7'9"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+		<rules>
+            <grant type="Size" id="ID_SIZE_MEDIUM"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Type" source="Internal" supports="Custom Ability Score Improvement Option"/>			
+			<stat  name= "innate speed" value="30" bonus="base"/>
+            <stat name="innate speed:swim" value="innate speed" bonus="base" />	
+            <grant type="Vision" id="ID_VISION_DARKVISION" />		
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language"  />
+            <grant type="Racial Trait" name="Aquatic Adaptation" id="ID_OP_RACIAL_TRAIT_FISHMAN_AQUATIC_ADAPTATION" /> 
+            <grant type="Racial Trait" name="Powerful Build" id="ID_OP_RACIAL_TRAIT_FISHMAN_POWERFUL_BUILD" /> 
+            <grant type="Racial Trait" name="Speach Of The Sea" id="ID_OP_RACIAL_TRAIT_FISHMAN_SPEECH_OF_THE_SEA" /> 
+            <grant type="Racial Trait" name="Fishman Subrace" id="ID_OP_RACIAL_TRAIT_FISHMAN_SUBRACE" /> 
+		</rules>
+	</element>
+
+
+    <element name="Aquatic Adaptation" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_AQUATIC_ADAPTATION">
+        <description>
+            <p>You can breathe air and water. You have advantage on all Strength (Athletic) ability checks made while in water.</p>
+        </description>
+        <sheet>
+            <description>You can breathe air and water. You have advantage on all Strength (Athletic) ability checks made while in water.</description>
+        </sheet>
+    </element>
+
+    <element name="Powerful Build" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_POWERFUL_BUILD">
+        <description>
+            <p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+        </description>
+        <sheet>
+            <description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+        </sheet>
+    </element>
+
+
+    <element name="Speech of The Sea" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_SPEECH_OF_THE_SEA">
+        <description>
+            <p>You can communicate simple ideas and words to creatures with a natural swimming speed that are of large size or smaller. Most sealife lack the ability to form or understand complicated messages, but can communicate simple expressions such as fear, hunger or joy.</p>
+        </description>
+        <sheet>
+            <description>You can communicate simple ideas and words to creatures with a natural swimming speed that are of large size or smaller.</description>
+        </sheet>
+    </element>
+
+    <element name="Fishman Subrace" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_SUBRACE">
+		<description>
+			<p>Choose between  sharptooth, stronghide or multipod.<br /></p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Sub Race" name="Fishman Subrace" supports="Fishman" />
+		</rules>
+	</element>
+
+
+    <element name="Sharptooth" type="Sub Race" source="One Piece Homebrew" id="ID_OP_SUB_RACE_FISHMAN_SHARPTOOTH">
+		<supports>Fishman</supports>
+		<description>
+			<p>Sharptooth fishmen typically have the physiological traits of a predator, such as a shark or killer whale. They use their sharp teeth or spines to tear enemies asunder if provoked. </p>
+			<p>     
+				<span class="feature">Frightening.</span>You gain proficiency in the Charisma (Intimidation) skill.<br />
+				<span class="feature">Natural Weapons.</span>You have sharp claws, teeth or spines that can be used as weapons. Your unarmed strikes deal slashing damage equal to 1d6 + your Strength modifier instead of the normal damage.<br />
+			</p>  
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Racial Trait" id="ID_OP_RACIAL_TRAIT_FISHMAN_SHARPTOOTH_NATURAL_WEAPON" />
+		</rules>
+	</element>
+
+
+    <element name="Natural Weapon" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_SHARPTOOTH_NATURAL_WEAPON">
+		<description>
+			<p>You have sharp claws, teeth or spines that can be used as weapons. Your unarmed strikes deal slashing damage equal to 1d6 + your Strength modifier instead of the normal damage.</p>
+		</description>
+		<sheet>
+			<description> When you use your unarmed strikes, you deal 1d6 + {{strength:modifier}} slashing damage.</description>
+		</sheet>
+	</element>
+
+    <element name="Stronghide" type="Sub Race" source="One Piece Homebrew" id="ID_OP_SUB_RACE_FISHMAN_STRONGHIDE">
+		<supports>Fishman</supports>
+		<description>
+			<p>Stronghide fishmen develop powerful bodies that further amplify their innate strength and endurance, allowing them to become remarkable martial artists and fighters. </p>
+			<p>     
+				<span class="feature">Natural Athlete.</span>You gain proficiency in the Strength (Athletics) skill.<br />
+				<span class="feature">Strong Body.</span>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.<br />
+			</p>  
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+            <grant type="Racial Trait" id="ID_OP_RACIAL_TRAIT_FISHMAN_STRONGHIDE_STRONG_BODY" />
+		</rules>
+	</element>
+
+    <element name="Strong Body" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_STRONGHIDE_STRONG_BODY">
+		<description>
+			<p>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
+		</description>
+		<sheet>
+			<description>Your hit points maximum increases by {{strongbody:hp}}.</description>
+		</sheet>
+        <rules>
+            <stat name="strongbody:hp" value="level" />
+			<stat name="hp" value="strongbody:hp" />            
+        </rules>
+	</element>
+
+    <element name="Multipod" type="Sub Race" source="One Piece Homebrew" id="ID_OP_SUB_RACE_FISHMAN_MULTIPOD">
+		<supports>Fishman</supports>
+		<description>
+			<p>Multipod fishmen are recognizable by their extra arms, possessing as many as eight functioning limbs. </p>
+			<p>     
+				<span class="feature">Manual Agility.</span>You gain proficiency in the Dexterity (Sleight of hand) skill.<br />
+				<span class="feature">Extra Arms.</span>You have up to four additional arms. Each arm can hold a single item that can fit in one hand. When engaged in two-weapon fighting, you can still only make one attack as a bonus action. You cannot engage in two-weapon fighting while wielding a weapon with the two-handed property. Additionally, you can only benefit from one equipped shield even if you are wielding multiple shields.<br />
+			</p>  
+		</description>
+		<sheet>
+			<description> You have up to four additional arms.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+		</rules>
+	</element>
+    
+    
+
+
+
+
+</elements>
