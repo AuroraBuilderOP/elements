@@ -189,6 +189,9 @@
 				<span class="feature">Amazon Training.</span>You have proficiency with longbows,shortbows, shortswords and spears.<br />
 				<span class="feature">Beginner Haki.</span> You can choose to take the Color of Armament Training feat if you meet the prerequisite. <br />
 			</p>  			
+			<div class="reference">
+				<div element="ID_OP_FEAT_COLOR_OF_ARMAMENT_TRAINING" />
+			</div>
 		</description>
 		<sheet display="false"/>
 		<rules>			
@@ -206,6 +209,7 @@
 		<description>
 			<p>Increase your Constitution by 2, to a maximum of 20.</p>
 		</description>
+		<sheet display="false"/>
 		<rules>
 			<stat name="constitution" value="2" alt="Kuja ASI" />
 		</rules>
@@ -217,6 +221,7 @@
 		<description>
 			<p>Increase your Wisdom by 2, to a maximum of 20.</p>
 		</description>
+		<sheet display="false"/>
 		<rules>
 			<stat name="wisdom" value="2" alt="Kuja ASI" />
 		</rules>
@@ -228,6 +233,7 @@
 		<description>
 			<p>Increase your Charisma by 2, to a maximum of 20.</p>
 		</description>
+		<sheet display="false"/>
 		<rules>
 			<stat name="charisma" value="2" alt="Kuja ASI" />
 		</rules>

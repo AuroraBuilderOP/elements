@@ -10,8 +10,7 @@
 
 	</info>
 
-
-    <element name="Color of armament advancement" type="Feat Feature" source="One Piece Homebrew" id="ID_OP_FEAT_FEATURE_COLOR_OF_ARMAMENT_ADVANCEMENT">
+     <element name="Color of armament advancement" type="Feat Feature" source="One Piece Homebrew" id="ID_OP_FEAT_FEATURE_COLOR_OF_ARMAMENT_ADVANCEMENT">
 		<description>
 		<p>When deciding to advance your Color of Armament during a Spirit Surge Event or for other reasons , you may choose any of the following features below. The rarity of the haki advancement feature you may choose is determined by the Spirit Surge Event or alternative method.</p>
         <h5>ARAMAMENT HAKI SPELLCASTING ABILITY</h5>
@@ -23,8 +22,9 @@
 		</description>
 		<sheet>
 			<description>
-			<p><strong>Armament Haki save DC</strong> = {{armament-haki:dc}}</p>
-			<p><strong>Armament Haki attack modifier</strong> = {{armament-haki:atk}}</p>
+            
+			<p><br/> <strong>Armament Haki save DC</strong> = {{armament-haki:dc}} <br/> </p> 
+			<p><strong>Armament Haki attack modifier</strong> = {{armament-haki:atk}} <br/> </p> 
             </description>
 		</sheet>
         <rules>
@@ -33,12 +33,16 @@
 			<stat name="armament-haki:dc" value="proficiency" />
 			<stat name="armament-haki:atk" value="constitution:modifier" />
 			<stat name="armament-haki:atk" value="proficiency" />
-            <select type="Feat Feature" name="Color of armament advancement feature" support="Haki Advancement"/>
+            <select type="Feat Feature" name="Color of armament advancement feature" supports="Haki Advancement"/>
         </rules>
-	</element>n
+	</element>
 
 
-        <element name="Color of armament advancement" type="Feat Feature" source="One Piece Homebrew" id="ID_OP_FEAT_FEATURE_COLOR_OF_ARMAMENT_ADVANCEMENT_UNCOMMON"/>
+        <element name="Color of armament advancement uncommon" type="Feat Feature" source="One Piece Homebrew" id="ID_OP_FEAT_FEATURE_COLOR_OF_ARMAMENT_ADVANCEMENT_UNCOMMON">
+        <description>
+		</description>
+        <sheet display="false"/>
+         </element>
 
 
 
@@ -46,7 +50,7 @@
 
 
     <element name="Soul Armor" type="Feat Feature" source="One Piece Homebrew" id="ID_OP_FEAT_FEATURE_COLOR_OF_ARMAMENT_ADVANCEMENT_SOUL_ARMOR"> 
-        <requirements>ID_OP_FEAT_FEATURE_COLOR_OF_ARMAMENT_ADVANCEMENT_UNCOMMON</requirements>   
+        <requirements>ID_OP_FEAT_FEATURE_COLOR_OF_ARMAMENT_ADVANCEMENT_UNCOMMON</requirements>
         <supports>Haki Advancement</supports>
         <description>
         <p><i>Haki Advancement: uncommon</i></p>

@@ -13,18 +13,19 @@
 
 	<element name="Color of Armament Training" type="Feat" source="One Piece Homebrew" id="ID_OP_FEAT_COLOR_OF_ARMAMENT_TRAINING">
 		<prerequisite>Constitution 11 or higher</prerequisite>
-		<requirements>[con:11]</requirements>
+	    <requirements>[con:11]</requirements> 
 		<description>
 			<p><i>Prerequisite: Constitution 11 or higher</i></p>
 			<p>You gain one Uncommon Armament Haki advancement feature, assuming you meet the other prerequisites listed by it in Chapter 7.</p>
 		</description>
-		<sheet display="false"/>
+        <sheet display="false"/>
+		<rules>
 		<grant type="Feat Feature" id="ID_OP_FEAT_FEATURE_COLOR_OF_ARMAMENT_ADVANCEMENT_UNCOMMON" />
 		<grant type="Feat Feature" id="ID_OP_FEAT_FEATURE_COLOR_OF_ARMAMENT_ADVANCEMENT" />
+		</rules>
 	</element>
 
-
-	<!-- 
+<!-- 
 	<element name="Voice of All Things" type="Feat" source="One Piece Homebrew" id="ID_OP_FEAT_VOICE_OF_ALL_THINGS">
 		<prerequisite>Special</prerequisite>
 		<requirements>ID_OP_SUB_RACE_HUMAN_THREE_EYE_TRIBE||ID_OP_GRANTS_FEAT_UNLOCKER</requirements>
