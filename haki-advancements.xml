@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>haki-advancement</name>
+		<description></description>
+		<author url="https://homebrewery.naturalcrit.com/share/ItlMSW6ztZTm">oneworldhd and Eiichiro Oda</author>
+		<update version="3.11.1">
+			<file name="feats-onepiece.xml" url="https://homebrewery.naturalcrit.com/share/ItlMSW6ztZTm"/>
+		</update>
+
+	</info>
+
+
+    <element name="Color of armament advancement" type="Feat Feature" source="One Piece Homebrew" id="ID_OP_FEAT_FEATURE_COLOR_OF_ARMAMENT_ADVANCEMENT">
+		<description>
+		<p>When deciding to advance your Color of Armament during a Spirit Surge Event or for other reasons , you may choose any of the following features below. The rarity of the haki advancement feature you may choose is determined by the Spirit Surge Event or alternative method.</p>
+        <h5>ARAMAMENT HAKI SPELLCASTING ABILITY</h5>
+        <p>Constitution is your spellcasting ability for your color of armament spells, since the strength of this haki is determined by your overall toughness. You use your Constitution whenever an Armament Haki spell refers to your spellcasting ability. In addition, you use your Constitution modifier when setting the saving throw DC for an armament haki spell you cast and when making an attack roll with one. </p>
+        <center>
+				<p><strong>Armament Haki save DC</strong> = 8 + your proficiency bonus + your Constitution modifier.</p>
+				<p><strong>Armament Haki attack modifier</strong> = your proficiency bonus + your Constitution modifier.</p>
+		</center>
+		</description>
+		<sheet>
+			<description>
+			<p><strong>Armament Haki save DC</strong> = {{armament-haki:dc}}</p>
+			<p><strong>Armament Haki attack modifier</strong> = {{armament-haki:atk}}</p>
+            </description>
+		</sheet>
+        <rules>
+            <stat name="armament-haki:dc" value="8" />
+			<stat name="armament-haki:dc" value="constitution:modifier" />
+			<stat name="armament-haki:dc" value="proficiency" />
+			<stat name="armament-haki:atk" value="constitution:modifier" />
+			<stat name="armament-haki:atk" value="proficiency" />
+            <select type="Feat Feature" name="Color of armament advancement feature" support="Haki Advancement"/>
+        </rules>
+	</element>n
+
+
+        <element name="Color of armament advancement" type="Feat Feature" source="One Piece Homebrew" id="ID_OP_FEAT_FEATURE_COLOR_OF_ARMAMENT_ADVANCEMENT_UNCOMMON"/>
+
+
+
+
+
+
+    <element name="Soul Armor" type="Feat Feature" source="One Piece Homebrew" id="ID_OP_FEAT_FEATURE_COLOR_OF_ARMAMENT_ADVANCEMENT_SOUL_ARMOR"> 
+        <requirements>ID_OP_FEAT_FEATURE_COLOR_OF_ARMAMENT_ADVANCEMENT_UNCOMMON</requirements>   
+        <supports>Haki Advancement</supports>
+        <description>
+        <p><i>Haki Advancement: uncommon</i></p>
+		<p>You are able to increase your willpower to bolster the toughness of your body using your spirit.</p>
+        <p>You can spend an action to gain 1d6 + your Constitution score + your character level in temporary hit points. You can use this feature a number of times equal to your proficiency bonus. You cannot use this feature again until you finish a long rest. </p>
+		</description>
+        <sheet action="Action" usage="{{proficiency}}/Long Rest">
+			<description>
+			<p>You are able to increase your willpower to bolster the toughness of your body using your spirit. You gain 1d6 + {{thp:bonus}} temporary hit points</p>
+            </description>
+		</sheet>
+        <rules>
+            <stat name="thp:bonus" value="level" />
+            <stat name="thp:bonus" value="constitution:modifier" />
+        </rules>
+    </element>
+
+
+
+
+
+</elements>
