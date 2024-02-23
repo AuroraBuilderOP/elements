@@ -192,44 +192,44 @@
 		</description>
 		<sheet display="false"/>
 		<rules>			
-			<select type="Racial Trait" name="Ability Score Increase" supports="kuja ASI" />
+			<select type="Racial Trait" name="Ability Score Increase" supports="Kuja ASI" />
 			<grant type="Proficiency" name ="Amazon Training" id="ID_INTERNAL_PROFICIENCY_GROUP_BOWS" />
 			<grant type="Proficiency" name ="Amazon Training" id="ID_INTERNAL_PROFICIENCY_GROUP_SPEARS" />
 			<grant type="Proficiency" name ="Amazon Training" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />			
-			<grant type="Feat" name="Color of Armament Training" id="ID_OP_FEAT_COLOR_OF_ARMAMENT_TRAINING" />    <!--  COLOUR  british spelling  (╯°□°)╯︵ ┻━┻     ┬─┬ノ( º _ ºノ)  now i am calm   -->
+			<grant type="Feat" id="ID_OP_FEAT_COLOR_OF_ARMAMENT_TRAINING" />    <!--  COLOUR  british spelling  (╯°□°)╯︵ ┻━┻     ┬─┬ノ( º _ ºノ)  now i am calm   -->
 		</rules>
 	</element>
 
 	<element name="Constitution" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_HUMAN_KUJA_ASI_CONSTITUTION">
 		<compendium display="false" />
-		<supports>kuja ASI</supports>
+		<supports>Kuja ASI</supports>
 		<description>
 			<p>Increase your Constitution by 2, to a maximum of 20.</p>
 		</description>
 		<rules>
-			<stat name="constitution" value="2" alt="kuja ASI" />
+			<stat name="constitution" value="2" alt="Kuja ASI" />
 		</rules>
 	</element>
 
 	<element name="Wisdom" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_HUMAN_KUJA_ASI_WISDOM">
 		<compendium display="false" />
-		<supports>kuja ASI</supports>
+		<supports>Kuja ASI</supports>
 		<description>
 			<p>Increase your Wisdom by 2, to a maximum of 20.</p>
 		</description>
 		<rules>
-			<stat name="wisdom" value="2" alt="kuja ASI" />
+			<stat name="wisdom" value="2" alt="Kuja ASI" />
 		</rules>
 	</element>
 
 	<element name="Charisma" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_HUMAN_KUJA_ASI_CHARISMA">
 		<compendium display="false" />
-		<supports>kuja ASI</supports>
+		<supports>Kuja ASI</supports>
 		<description>
 			<p>Increase your Charisma by 2, to a maximum of 20.</p>
 		</description>
 		<rules>
-			<stat name="charisma" value="2" alt="kuja ASI" />
+			<stat name="charisma" value="2" alt="Kuja ASI" />
 		</rules>
 	</element>
 
