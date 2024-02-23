@@ -3,7 +3,7 @@
 	<info>
 		<name>Bruiser</name>
 		<description>The Bruiser class from the Player’s Handbook.</description>
-		<author url="https://homebrewery.naturalcrit.com/share/sK-UDzk7x8U_">oneworldhd</author>
+		<author url="https://homebrewery.naturalcrit.com/share/ItlMSW6ztZTm">oneworldhd</author>
 		<update version="0.2.5">
 			<file name="class-Bruiser.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/classes/class-bruiser.xml" />
 		</update>
