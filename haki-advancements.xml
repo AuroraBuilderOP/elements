@@ -21,11 +21,8 @@
 		</center>
 		</description>
 		<sheet>
-			<description>
-            
-			<p><br/> <strong>Armament Haki save DC</strong> = {{armament-haki:dc}} <br/> </p> 
-			<p><strong>Armament Haki attack modifier</strong> = {{armament-haki:atk}} <br/> </p> 
-            </description>
+			<description><p><strong>Armament Haki save DC</strong> = {{armament-haki:dc}} <br/> </p> </description>
+			<description><p><strong>Armament Haki attack modifier</strong> = {{armament-haki:atk}} <br/> </p></description>           
 		</sheet>
         <rules>
             <stat name="armament-haki:dc" value="8" />
@@ -39,12 +36,10 @@
 
 
         <element name="Color of armament advancement uncommon" type="Feat Feature" source="One Piece Homebrew" id="ID_OP_FEAT_FEATURE_COLOR_OF_ARMAMENT_ADVANCEMENT_UNCOMMON">
-        <description>
-		</description>
-        <sheet display="false"/>
+     	    <description>
+			</description>
+    	    <sheet display="false"/>
          </element>
-
-
 
 
 

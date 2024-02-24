@@ -130,7 +130,7 @@
 				
 				<span class="feature">Ability Score Increase.</span>You increase your Strength score by 2 .<br />
 				<span class="feature">Size.</span>Human giants are between 7 and 8 feet tall and weigh between 280 and 340 pounds. Your size is Medium.<br />
-				<span class="feature">Natural Athlete.</span>You have proficiency in the Athletics skill.<br />
+				<span class="feature">Natural Athlete.</span>You have proficiency in Strength (Athletics).<br />
 			    <span class="feature">Warrior Training.</span>You have proficiency with the Battleaxe, Handaxe, Light Hammer, Longsword, Club, and Spear.<br />
 				<span class="feature">Giant's Endurance.</span>You can focus yourself to occasionally shrug off injury. When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled, and reduce the damage by that total. After you use this trait, you can’t use it again until you finish a short or long rest.<br />
 				<span class="feature">Powerful Build.</span>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.<br />
@@ -138,7 +138,7 @@
 		</description>
 		<sheet display="false"/>
 		<rules>
-			<stat name="strength" value="2" />
+			<stat name="strength" value="2" alt="Giant Human"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
 			<grant type="Racial Trait" id="ID_OP_RACIAL_TRAIT_HUMAN_GIANT_WARRIOR_TRAINING" />
 			<grant type="Racial Trait" id="ID_OP_RACIAL_TRAIT_HUMAN_GIANT_GIANT_ENDURANCE" />
