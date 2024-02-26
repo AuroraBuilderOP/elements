@@ -1,38 +1,40 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Human-Onepiece</name>
+		<name>Merfolk-Onepiece</name>
 		<description></description>
 		<author url="https://homebrewery.naturalcrit.com/share/ItlMSW6ztZTm">oneworldhd and Eiichiro Oda</author>
-		<update version="3.11.1">
-			<file name="race-merfolk.xml" url="https://homebrewery.naturalcrit.com/share/ItlMSW6ztZTm"/>
+		<update version="3.11.2">
+			<file name="race-human-onepiece.xml" url="https://homebrewery.naturalcrit.com/share/ItlMSW6ztZTm"/>
 		</update>
 	</info>
+	<element name="Human-Onepiece" type="Race" source="One Piece Homebrew" id="ID_OP_RACE_HUMAN">
+		<description>
+			<p class="flavor">Merfolk, along with fish-men, are one of the two races of humanoids that inhabit the sea. Merfolk have the upper body of a human and the lower body of a fish. Both races are ruled by the undersea king, King Neptune.<br /> Merfolk have access to various skills while underwater, such as extremely fast swimming speeds, weapon proficiency, and the ability to communicate with many sea creatures. Very rarely, a mermaid can be born with the ability to speak with Sea Kings. Only a mermaid princess possesses this power, however. <br /></p>
+			
+			<h4>PEACEFUL</h4>
+			<p>Unlike fish-men, merfolk are far more peaceful and prefer to live in secret away from most other races. Despite their differences, merfolk and fish-men get along very well. <br/></p>
+				
+			<h4>SEA TO LAND</h4>
+			<p>Due to their lack of legs, they move very slowly on land. This makes sea travel their primary method of getting around, and they're very proficient at it. However, upon reaching the age of 30, their tails will split and allow them to walk on land much easier.<br/></p>
+				
+			<h4>VICTIMS OF SLAVERY</h4>
+			<p>Despite their efforts to stay away from the surface, some merfolk still end up captured and sold into slavery. Because of their rarity, many can sell for incredibly high prices if they are under 30.<br/></p>
+				
+			<h4>BEAUTY AND GRACE</h4>
+			<p>Merfolk are all considered incredibly beautiful by the standards of humans. This beauty is mostly lost when they reach the age of 30 when their tail splits. They are also far less brutish than fish-men, making them a bit less likely to be involved in physical altercations. Merfolk are more commonly involved in activities or occupations that involve their speed or intelligence. Though, many are stilled trained in the military and can use a fighting style known as Merman Combat.<br/></p>
 
-    <element name="Merfolk" type="Race" source="One Piece Homebrew" id="ID_OP_RACE_MERFOLK">
-        <description>
-            <p class="flavour">Merfolk are humanoid creatures with the upper body of a human and the lower body of a marine creature, typically a fish or an octopus. Unlike fishmen, the human side of merfolk does not necessarily bear any piscine features, though it is not unheard of for some merfolk to have more marine traits such as fins or webbed fingers.<br/> Related to the fishmen, merfolk make their home beneath the Red Line on fishman island. The two races exist in harmony, sharing a similar difficult history with the surface world and the races that inhabit it. But whereas fishmen are feared and infamous for being savages, merfolk have a much more favorable reputation among humans as beings of extreme beauty. Sadly, this reputation only serves to make them more desirable as slaves on the underworld markets, leading to many cases of abductions at the hands of pirates. <br/> Despite these unfortunate circumstances, merfolk have remained firmly open-minded towards all other races, including humans. Kind-hearted and gregarious to a fault, merfolk have a reputation for saving drowning sailors from the depths only to disappear moments afterwards.</p>
-           
-            <h4>DEEP SEA MONARCHS</h4>
-            <p>While not as physically imposing or martially bent as fishmen, merfolk have a keen eye for politics and diplomacy, being the current rulers of Fishman Island under King Neptune. While the common fishman has the advantage in a one on one fight, the merfolk's ability to organize and manage a standing army makes them the obvious figureheads in politics with the surface world.<br/> Merfolk are very hospitable and welcoming to travelers that reach Fishman Island, which is a common occurance as it's the only way to travel from Paradise to the New World. As long as visitors come in peace and with no ill intent, the merfolk will graciously host any traveler during their stay whether they are pirates or marine soldiers.<br/> While peaceful, merfolk are not naive however. If provoked, merfolk will respond in kind if their hands are forced, many of their soldiers and warriors having mastered a unique form of Fishman Karate unique to their kind. Being the fastest swimmers of all intelligent races, coupled with their organized military, make merfolk a force to be reckoned with even when battle is at hand. </p>
-           
-            <h4>GREGARIOUS HELPERS</h4>
-            <p>Merfolk delight in song, music and all forms of community based entertainment. Their's is a tight-knit community that lacks social stigma or class differences, each individual treated as a cherished part of the community as long as they are honest and kind-hearted in turn. Merfolk and fishmen typically consider themselves kin of eachother and rarely make a difference between the two.<br/> Interbreeding between the two races has an equal chance of producing either a merfolk or fishman child, and most carry genes from both species with them resulting in a sense of unity and equality between the two races.<br/> Merfolk may still have some reservations about humans, but these prejudices typically stem from fear or ignorance, which can usually be remedied through nothing but a few minutes of pleasant conversation. Most merfolk would much rather make a new friend rather than an enemy, and typically treat strangers as potential friends or allies with more openmindedness than most other species.<br/> Merfolk's friendly and approachable nature isn't limited only to other sapient beings. All mermaids can communicate and speak with fish, having a much easier time doing so than even fishmen. They can use this ability to call fish to their aid, which can be used for scouting or to gather information on the surrounding waters.</p>
-            
-            <h4>Merfolk Traits</h4>
-            <p>
-                <span class="feature">Ability Score Increase.</span> One ability score of your choice increases by 2, and another one increases by 1. Alternatively,three ability scores of your choice increase by 1.<br/>
-                <span class="feature">Age.</span>Humans reach adulthood in their late teens and live less than a century.<br/>
-                <span class="feature">Alignment.</span> Merfolk are naturally amiable and kindhearted, gravitating towards good alignments. They have a strong focus on community and coexistence, making them tend towards law over chaos.<br/>
-                <span class="feature">Size.</span> Merfolk are usually the same size as humans, though exceptions that vary to the extremes do exist. The ones presented here are human-sized. Your size is medium. <br/>
-                <span class="feature">Speed.</span> Your base walking speed is 10 feet. Your base swimming speed is 40 ft. <br/>
-                <span class="feature">Darkvision.</span>Accustomed to the dark ocean floors where light is scarce, you have darkvision out to 60 feet and can see in dim light as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.<br/>
-                <span class="feature">Aquatic Adaption.</span> You can breathe air and water. You have advantage on all Strength (Athletic) ability checks made while in water <br/>
-                <span class="feature">Bubble Floater.</span> When near a body of water, you can create a bubble floater around your midsection as an action. While you have this floater, your walking speed increases by 20. The floater lasts for 8 hours. <br/>
-                <span class="feature">Call for Aid.</span> As an action, you can summon a swarm of fish in an empty square within 10 feet of you that is a body of water (pg.9). The swarm is friendly to you and your allies, and obeys your command for 1 hour. Roll initiative for the swarm separately when in combat. It obeys any verbal commands that you issue to it (no action required by you). If you don’t issue any commands to it, it defends itself from hostile creatures, but otherwise takes no actions. Once you use this trait, you cannot use it again until you finish a long rest <br/>
-                <span class="feature">Friend of the Sea.</span> You can speak with creatures with a natural swimming speed that are of huge size or smaller. Though simple-minded, sea creatures can understand the words you speak. Additionally, you have advantage on Wisdom (Animal Handling) ability checks made towards marine creatures.<br/>
-                <span class="feature">Pure Soul.</span> You have advantage on Intelligence, Wisdom and Charisma saving throws.<br/>
-                <span class="feature">Languages.</span> You can speak, read, and write Common and one extra language of your choice. Merfolk typically learn the languages of other peoples they deal with, including obscure dialects.
+			<h4>TRAITS</h4>
+			<p>
+				<span class="feature">Ability Score Increase.</span> Your dexterity, wisdom &amp; charisma score increases by 1.<br />
+				<span class="feature">Age.</span>Merfolk reach adulthood in their teens, mature considerably in their 30s, and live for around a century.<br />
+				<span class="feature">Alignment.</span>Most merfolk are neutral or lawful good. However, few may turn violent against humans and become evil. They are rarely chaotic in nature.<br />
+				<span class="feature">Size.</span>Merfolk are between 6 and 7 feet long and weigh between 160 and 240 pounds on average. Your size is medium.<br />
+				<span class="feature">Speed.</span>Your base walking speed is 10 feet, and you have a Swimming speed of 50 feet. Once you reach age 30 as a female, your walking speed becomes 30 feet.<br />		
+				<span class="feature">Languages.</span>Merfolk can all speak and understand the universal spoken language of this world. Additionally, using gestures and sounds, you can communicate simple ideas with any beast that has an innate Swimming speed.<br />
+				
+				<span class="feature">Subraces.</span>Choose between standard, variant, kuja or giant.<br />
+			</p>        
             </p>
 			<div class="reference">
 				<div element="ID_OP_RACIAL_TRAIT_MERFOLK_SWARM_OF_FISH" />
