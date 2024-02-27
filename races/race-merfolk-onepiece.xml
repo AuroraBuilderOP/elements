@@ -32,10 +32,12 @@
 				<span class="feature">Size.</span>Merfolk are between 6 and 7 feet long and weigh between 160 and 240 pounds on average. Your size is medium.<br />
 				<span class="feature">Speed.</span>Your base walking speed is 10 feet, and you have a Swimming speed of 50 feet. Once you reach age 30 as a female, your walking speed becomes 30 feet.<br />		
 				<span class="feature">Languages.</span>Merfolk can all speak and understand the universal spoken language of this world. Additionally, using gestures and sounds, you can communicate simple ideas with any beast that has an innate Swimming speed.<br />
-				
-				<span class="feature">Subraces.</span>Choose between standard, variant, kuja or giant.<br />
+				<span class="feature">Amphibious.</span>You can breathe air and water.<br />
+				<span class="feature">Adapted to the Sea.</span>With the ability to adapt to extreme underwater depths, you have Resistance to cold damage.<br/>
+				<span class="feature">Merfolk Training.</span>You have proficiency with the spear, Trident, and net.<br />
+				<span class="feature">Merfolk Combat.</span>Being trained in underwater combat, you can control the flow of water to attack your enemies (ice and cold damage is treated as water). You can cast Ray of Frost with this trait. Starting at 3rd Level, you can cast Ice Knife with it, and starting at 5th Level, you can also cast Rime's Binding Ice with it. Once you Cast a Spell with this trait, you can't cast that spell with it again until you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells.<br/>
+
 			</p>        
-            </p>
 			<div class="reference">
 				<div element="ID_OP_RACIAL_TRAIT_MERFOLK_SWARM_OF_FISH" />
 			</div>
@@ -47,129 +49,74 @@
 			<set name="weight" modifier="2d4">110 lb.</set>
 		</setters>
         <rules>
-            <select type="Ability Score Improvement" name="Ability Score Improvement Type" source="Internal" supports="Custom Ability Score Improvement Option"/>
-            <grant type="Size" id="ID_SIZE_MEDIUM"/>
-            <stat  name= "innate speed" value="10" bonus="base"/>
-            <stat  name= "innate speed:swim" value="40" bonus="base" />	
-            <grant type="Vision" id="ID_VISION_DARKVISION" />		
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+			<stat name="dexterity" value="1" />
+			<stat name="wisdom" value="1" />
+			<stat name="charisma" value="1" />
+            <grant type="Size" id="ID_SIZE_MEDIUM"/>			
+			<select type="Racial Trait" name="Tail" supports="Merfolk"/>
+            <stat  name= "innate speed:swim" value="50" bonus="base" />		
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
-			<select type="Language" name="Customized Language" supports="Custom Race Language"  />
-            <grant type="Racial Trait" id="ID_OP_RACIAL_TRAIT_FISHMAN_AQUATIC_ADAPTATION" />
-
+            <grant type="Racial Trait" name="Adapted to the Sea" id="ID_OP_RACIAL_TRAIT_FISHMAN_ADAPTED_TO_THE_SEA" /> 
+		    <grant type="Racial Trait" name="Adapted to the Sea" id="ID_OP_RACIAL_TRAIT_MERFOLK_COMBAT" />
+		    <grant type="Racial Trait" name="Adapted to the Sea" id="ID_OP_RACIAL_TRAIT_MERFOLK_LANGUAGE" />
         </rules>
     </element>
 
-<!--  use reference mod of a companion (hypotetical)  for fish sworm  -->
 
-	<element name="Swarm of Fish" type="Companion" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_MERFOLK_SWARM_OF_FISH">
-		<setters>
-			<set name="strength">8</set>
-			<set name="dexterity">15</set>
-			<set name="constitution">9</set>
-			<set name="intelligence">1</set>
-			<set name="wisdom">14</set>
-			<set name="charisma">2</set>
-			<set name="ac">12</set>
-			<set name="hp">5 (1d6+1)</set>
-			<set name="speed">0 ft., swim 40 ft.</set>
-			<set name="senses">darkvision 60 ft., passive Perception 12+pb</set>
-			<set name="skills">Deception +4, Insight +3, Persuasion +4, Stealth +5</set>
-			<set name="resistances">bludgeoning, piercing, and slashing </set>
-            <set name="condition immunities">charmed, frightened, grappled, paralyzed, petrified, prone, restrained and stunned </set>            
-			<set name="type">Beast</set>
-			<set name="size">Medium swarm of tiny</set>
-			<set name="alignment">unaligned</set>
-			<set name="challenge">1</set>
-			<set name="traits">ID_OP_RACIAL_TRAIT_MERFOLK_SWARM_OF_FISH_TRAIT_SEARCH_PARTY,ID_OP_RACIAL_TRAIT_MERFOLK_SWARM_OF_FISH_TRAIT_SWARM,ID_OP_RACIAL_TRAIT_MERFOLK_SWARM_OF_FISH_TRAIT_WATER_BREATHING</set>
-			<set name="actions">ID_OP_RACIAL_TRAIT_MERFOLK_SWARM_OF_FISH_ACTION_NIBBELS_1,ID_OP_RACIAL_TRAIT_MERFOLK_SWARM_OF_FISH_ACTION_NIBBELS_2</set>
-		</setters>
-		<rules>
-			<stat name="companion:ac" value="12" />
-			<stat name="companion:hp:max" value="5" bonus="base" />
-            <stat name="companion:hp:max" value="level" bonus="base"/>
-            <stat name="companion:hp:max" value="level" bonus="base"/>
-            <stat name="companion:hp:max" value="level" bonus="base"/>
-            <stat name="companion:hp:max" value="level" bonus="base"/>
-            <stat name="darkvision:range" value="60" bonus="base" />
-			<stat name="companion:speed" value="0" bonus="base" />
-			<stat name="companion:speed:swim" value="40" bonus="base" />
-			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
-			<stat name="companion:survival:proficiency" value="companion:proficiency" bonus="base" />
-		</rules>
-	</element>
-
-	<element name="Search Party" type="Companion Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_MERFOLK_SWARM_OF_FISH_TRAIT_SEARCH_PARTY">
-		<description>
-			<p>The swarm has advantage on Wisdom (Perception) and Wisdom (Survival) checks while it has more than half its maximum hit points.</p>
-		</description>
-		<sheet>
-			<description>The swarm has advantage on Wisdom (Perception) and Wisdom (Survival) checks while it has more than half its maximum hit points.</description>
-		</sheet>
-	</element>
-	<element name="Swarm" type="Companion Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_MERFOLK_SWARM_OF_FISH_TRAIT_SWARM">
-		<description>
-			<p>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a tiny fish. The swarm can't regain hit points or gain temporary hit points.</p>
-		</description>
-		<sheet>
-			<description>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a tiny fish. The swarm can't regain hit points or gain temporary hit points.</description>
-		</sheet>
-	</element>
-	<element name="Water Breathing" type="Companion Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_MERFOLK_SWARM_OF_FISH_TRAIT_WATER_BREATHING">
-		<description>
-			<p>The swarm can breathe only underwater.</p>
-		</description>
-		<sheet>
-			<description>The swarm can breathe only underwater.</description>
-		</sheet>
-	</element>
-	<element name="Nibbles (Swarm has more than half HP)" type="Companion Action" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_MERFOLK_SWARM_OF_FISH_ACTION_NIBBELS_1">
-		<description>
-			<p>Melee Weapon Attack: +2 +{{proficiency}} to hit, reach 0 ft., one creature in the swarm's space. Hit: 5 (2d4) piercing damage.</p>
-		</description>
-		<sheet>
-			<description>Melee Weapon Attack: +2 +{{proficiency}} to hit, reach 0 ft., one creature in the swarm's space. Hit: 5 (2d4) piercing damage.</description>
-		</sheet>
-	</element>
-	<element name="Nibbles (Swarm has less than half HP)" type="Companion Action" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_MERFOLK_SWARM_OF_FISH_ACTION_NIBBELS_2">
-		<description>
-			<p>Melee Weapon Attack: +2 +{{proficiency}} to hit, reach 0 ft., one creature in the swarm's space. Hit: 2 (1d4) piercing damage.</p>
-		</description>
-		<sheet>
-			<description>Melee Weapon Attack: +2 +{{proficiency}} to hit, reach 0 ft., one creature in the swarm's space. Hit: 2 (1d4) piercing damage.</description>
-		</sheet>
-	</element>
-
-
-
-    <element name="Friend of the Sea" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_MERFOLK_FRIEND_OF_THE_SEA">
+    <element name="Split" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_MERFOLK_TAIL_SPLIT">
+		<supports>Merfolk</supports>
         <description>
-            <p>You can speak with creatures with a natural swimming speed that are of huge size or smaller. Though simple-minded, sea creatures can understand the words you speak. Additionally, you have advantage on Wisdom (Animal Handling) ability checks made towards marine creatures.<br/></p>
+            <p>You are a Mermaid over the age of 30 thus having a split tail, granting you faster movement on land.<br/></p>
         </description>
         <sheet>
-            <description>You can speak with creatures with a natural swimming speed that are of huge size or smaller. You have advantage on Wisdom (Animal Handling) ability checks made towards marine creatures</description>
+            <description>You are a Mermaid over the age of 30 thus having a split tail, granting you faster movement on land.</description>
         </sheet>
+		<rules>
+		<stat  name= "innate speed" value="30" bonus="base"/>
+		</rules>
     </element>
 
-    <element name="Bubble Floater" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_MERFOLK_BUBBLE_FLOATER">
+	<element name="Unsplit" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_MERFOLK_TAIL_SPLIT">
+		<supports>Merfolk</supports>
         <description>
-            <p>When near a body of water, you can create a bubble floater around your midsection as an action. While you have this floater, your walking speed increases by 20. The floater lasts for 8 hours.<br/></p>
+            <p>You are a Mermaid under the age of 30 or a Merman thus having an usplit tail.<br/></p>
         </description>
-        <sheet usage= "Lasts 8 hours">
-            <description>When near a body of water, you can create a bubble floater around your midsection as an action. While you have this floater, your walking speed increases by 20</description>
+        <sheet>
+            <description>You are a Mermaid under the age of 30 or a Merman thus having an usplit tail.</description>
         </sheet>
+		<rules>
+		<stat  name= "innate speed" value="10" bonus="base"/>
+		</rules>
     </element>
 
-
-	<element name="Bubble Floater" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_MERFOLK_BUBBLE_FLOATER">
+	  <element name="Merfolk Combat" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_MERFOLK_COMBAT">
         <description>
-            <p>When near a body of water, you can create a bubble floater around your midsection as an action. While you have this floater, your walking speed increases by 20. The floater lasts for 8 hours.<br/></p>
+            <p>Being trained in underwater combat, you can control the flow of water to attack your enemies (ice and cold damage is treated as water). You can cast Ray of Frost with this trait. Starting at 3rd Level, you can cast Ice Knife with it, and starting at 5th Level, you can also cast Rime's Binding Ice with it. Once you Cast a Spell with this trait, you can't cast that spell with it again until you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells.<br/></p>
         </description>
-        <sheet usage= "Lasts 8 hours">
-            <description>When near a body of water, you can create a bubble floater around your midsection as an action. While you have this floater, your walking speed increases by 20</description>
-        </sheet>
+		<sheet>
+			<description>Being trained in underwater combat, you can control the flow of water to attack your enemies (ice and cold damage is treated as water).</description>
+			<description>You can cast ray of frost with this trait. Charisma is your spellcasting ability for this spell.</description>
+			<description level="3">You can cast ray of frost with this trait. You can cast Ice Knife spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
+			<description level="5">You can cast ray of frost with this trait. You can cast Ice Knife spell and the Rime's Binding Ice spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_RRAY_OF_FROST" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_ICE_KNIFE" level="3" />
+			<grant type="Spell" id="ID_WOTC_FTOD_SPELL_RIMES_BINDING_ICE" level="5" />
+		</rules>
     </element>
 
-
+	<element name="Language" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_MERFOLK_LANGUAGE">
+        <description>
+            <p>Merfolk can all speak and understand the universal spoken language of this world. Additionally, using gestures and sounds, you can communicate simple ideas with any beast that has an innate Swimming speed.<br/></p>
+        </description>
+        <sheet>
+            <description>Merfolk can all speak and understand the universal spoken language of this world. Additionally, using gestures and sounds, you can communicate simple ideas with any beast that has an innate Swimming speed.</description>
+        </sheet>
+    </element>
 
 
 </elements>

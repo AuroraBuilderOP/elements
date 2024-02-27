@@ -74,7 +74,7 @@
             <p>With the ability to adapt to extreme underwater depths, you have Resistance to cold damage.</p>
         </description>
         <sheet>
-            <description>You have Resistance to cold damage.</description>
+            <description>You have Resistance to cold damage. And can breathe air and water.</description>
         </sheet>
 		<rules>
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
