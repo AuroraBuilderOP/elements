@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Merfolk-Onepiece</name>
+		<description></description>
+		<author url="https://homebrewery.naturalcrit.com/share/ItlMSW6ztZTm">oneworldhd and Eiichiro Oda</author>
+		<update version="3.11.2">
+			<file name="race-human-onepiece.xml" url="https://homebrewery.naturalcrit.com/share/ItlMSW6ztZTm"/>
+		</update>
+	</info>
+	<element name="Human-Onepiece" type="Race" source="One Piece Homebrew" id="ID_OP_RACE_HUMAN">
+		<description>
+			<p class="flavor">Merfolk, along with fish-men, are one of the two races of humanoids that inhabit the sea. Merfolk have the upper body of a human and the lower body of a fish. Both races are ruled by the undersea king, King Neptune.<br /> Merfolk have access to various skills while underwater, such as extremely fast swimming speeds, weapon proficiency, and the ability to communicate with many sea creatures. Very rarely, a mermaid can be born with the ability to speak with Sea Kings. Only a mermaid princess possesses this power, however. <br /></p>
+			
+			<h4>PEACEFUL</h4>
+			<p>Unlike fish-men, merfolk are far more peaceful and prefer to live in secret away from most other races. Despite their differences, merfolk and fish-men get along very well. <br/></p>
+				
+			<h4>SEA TO LAND</h4>
+			<p>Due to their lack of legs, they move very slowly on land. This makes sea travel their primary method of getting around, and they're very proficient at it. However, upon reaching the age of 30, their tails will split and allow them to walk on land much easier.<br/></p>
+				
+			<h4>VICTIMS OF SLAVERY</h4>
+			<p>Despite their efforts to stay away from the surface, some merfolk still end up captured and sold into slavery. Because of their rarity, many can sell for incredibly high prices if they are under 30.<br/></p>
+				
+			<h4>BEAUTY AND GRACE</h4>
+			<p>Merfolk are all considered incredibly beautiful by the standards of humans. This beauty is mostly lost when they reach the age of 30 when their tail splits. They are also far less brutish than fish-men, making them a bit less likely to be involved in physical altercations. Merfolk are more commonly involved in activities or occupations that involve their speed or intelligence. Though, many are stilled trained in the military and can use a fighting style known as Merman Combat.<br/></p>
+
+			<h4>TRAITS</h4>
+			<p>
+				<span class="feature">Ability Score Increase.</span> Your dexterity, wisdom &amp; charisma score increases by 1.<br />
+				<span class="feature">Age.</span>Merfolk reach adulthood in their teens, mature considerably in their 30s, and live for around a century.<br />
+				<span class="feature">Alignment.</span>Most merfolk are neutral or lawful good. However, few may turn violent against humans and become evil. They are rarely chaotic in nature.<br />
+				<span class="feature">Size.</span>Merfolk are between 6 and 7 feet long and weigh between 160 and 240 pounds on average. Your size is medium.<br />
+				<span class="feature">Speed.</span>Your base walking speed is 10 feet, and you have a Swimming speed of 50 feet. Once you reach age 30 as a female, your walking speed becomes 30 feet.<br />		
+				<span class="feature">Languages.</span>Merfolk can all speak and understand the universal spoken language of this world. Additionally, using gestures and sounds, you can communicate simple ideas with any beast that has an innate Swimming speed.<br />
+				<span class="feature">Amphibious.</span>You can breathe air and water.<br />
+				<span class="feature">Adapted to the Sea.</span>With the ability to adapt to extreme underwater depths, you have Resistance to cold damage.<br/>
+				<span class="feature">Merfolk Training.</span>You have proficiency with the spear, Trident, and net.<br />
+				<span class="feature">Merfolk Combat.</span>Being trained in underwater combat, you can control the flow of water to attack your enemies (ice and cold damage is treated as water). You can cast Ray of Frost with this trait. Starting at 3rd Level, you can cast Ice Knife with it, and starting at 5th Level, you can also cast Rime's Binding Ice with it. Once you Cast a Spell with this trait, you can't cast that spell with it again until you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells.<br/>
+
+			</p>        
+			<div class="reference">
+				<div element="ID_OP_RACIAL_TRAIT_MERFOLK_SWARM_OF_FISH" />
+			</div>
+        </description>
+        <sheet display="false" />
+        <setters>
+			<set name="names-format">{{name}} {{surname}}</set>
+			<set name="height" modifier="3d6">7'9"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+        <rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" />
+			<stat name="dexterity" value="1" />
+			<stat name="wisdom" value="1" />
+			<stat name="charisma" value="1" />
+            <grant type="Size" id="ID_SIZE_MEDIUM"/>			
+			<select type="Racial Trait" name="Tail" supports="Merfolk"/>
+            <stat  name= "innate speed:swim" value="50" bonus="base" />		
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Racial Trait" name="Adapted to the Sea" id="ID_OP_RACIAL_TRAIT_FISHMAN_ADAPTED_TO_THE_SEA" /> 
+		    <grant type="Racial Trait" name="Adapted to the Sea" id="ID_OP_RACIAL_TRAIT_MERFOLK_COMBAT" />
+		    <grant type="Racial Trait" name="Adapted to the Sea" id="ID_OP_RACIAL_TRAIT_MERFOLK_LANGUAGE" />
+        </rules>
+    </element>
+
+
+    <element name="Split" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_MERFOLK_TAIL_SPLIT">
+		<supports>Merfolk</supports>
+        <description>
+            <p>You are a Mermaid over the age of 30 thus having a split tail, granting you faster movement on land.<br/></p>
+        </description>
+        <sheet>
+            <description>You are a Mermaid over the age of 30 thus having a split tail, granting you faster movement on land.</description>
+        </sheet>
+		<rules>
+		<stat  name= "innate speed" value="30" bonus="base"/>
+		</rules>
+    </element>
+
+	<element name="Unsplit" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_MERFOLK_TAIL_SPLIT">
+		<supports>Merfolk</supports>
+        <description>
+            <p>You are a Mermaid under the age of 30 or a Merman thus having an usplit tail.<br/></p>
+        </description>
+        <sheet>
+            <description>You are a Mermaid under the age of 30 or a Merman thus having an usplit tail.</description>
+        </sheet>
+		<rules>
+		<stat  name= "innate speed" value="10" bonus="base"/>
+		</rules>
+    </element>
+
+	  <element name="Merfolk Combat" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_MERFOLK_COMBAT">
+        <description>
+            <p>Being trained in underwater combat, you can control the flow of water to attack your enemies (ice and cold damage is treated as water). You can cast Ray of Frost with this trait. Starting at 3rd Level, you can cast Ice Knife with it, and starting at 5th Level, you can also cast Rime's Binding Ice with it. Once you Cast a Spell with this trait, you can't cast that spell with it again until you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells.<br/></p>
+        </description>
+		<sheet>
+			<description>Being trained in underwater combat, you can control the flow of water to attack your enemies (ice and cold damage is treated as water).</description>
+			<description>You can cast ray of frost with this trait. Charisma is your spellcasting ability for this spell.</description>
+			<description level="3">You can cast ray of frost with this trait. You can cast Ice Knife spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
+			<description level="5">You can cast ray of frost with this trait. You can cast Ice Knife spell and the Rime's Binding Ice spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_RRAY_OF_FROST" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_ICE_KNIFE" level="3" />
+			<grant type="Spell" id="ID_WOTC_FTOD_SPELL_RIMES_BINDING_ICE" level="5" />
+		</rules>
+    </element>
+
+	<element name="Language" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_MERFOLK_LANGUAGE">
+        <description>
+            <p>Merfolk can all speak and understand the universal spoken language of this world. Additionally, using gestures and sounds, you can communicate simple ideas with any beast that has an innate Swimming speed.<br/></p>
+        </description>
+        <sheet>
+            <description>Merfolk can all speak and understand the universal spoken language of this world. Additionally, using gestures and sounds, you can communicate simple ideas with any beast that has an innate Swimming speed.</description>
+        </sheet>
+    </element>
+
+
+</elements>

@@ -3,13 +3,29 @@
 	<info>
 		<name>Feats-Onepiece</name>
 		<description></description>
-		<author url="https://homebrewery.naturalcrit.com/share/HkRwCRCxU">u/Mr-Silvers and Eiichiro Oda</author>
-		<update version="3.1.1">
-			<file name="feats-onepiece.xml" url="https://homebrewery.naturalcrit.com/share/HkRwCRCxU"/>
+		<author url="https://homebrewery.naturalcrit.com/share/ItlMSW6ztZTm">oneworldhd and Eiichiro Oda</author>
+		<update version="3.11.1">
+			<file name="feats-onepiece.xml" url="https://homebrewery.naturalcrit.com/share/ItlMSW6ztZTm"/>
 		</update>
 	</info>
 
 
+
+	<element name="Color of Armament Training" type="Feat" source="One Piece Homebrew" id="ID_OP_FEAT_COLOR_OF_ARMAMENT_TRAINING">
+		<prerequisite>Constitution 11 or higher</prerequisite>
+	    <requirements>[con:11]</requirements> 
+		<description>
+			<p><i>Prerequisite: Constitution 11 or higher</i></p>
+			<p>You gain one Uncommon Armament Haki advancement feature, assuming you meet the other prerequisites listed by it in Chapter 7.</p>
+		</description>
+        <sheet display="false"/>
+		<rules>
+		<grant type="Feat Feature" id="ID_OP_FEAT_FEATURE_COLOR_OF_ARMAMENT_ADVANCEMENT_UNCOMMON" />
+		<grant type="Feat Feature" id="ID_OP_FEAT_FEATURE_COLOR_OF_ARMAMENT_ADVANCEMENT" />
+		</rules>
+	</element>
+
+<!-- 
 	<element name="Voice of All Things" type="Feat" source="One Piece Homebrew" id="ID_OP_FEAT_VOICE_OF_ALL_THINGS">
 		<prerequisite>Special</prerequisite>
 		<requirements>ID_OP_SUB_RACE_HUMAN_THREE_EYE_TRIBE||ID_OP_GRANTS_FEAT_UNLOCKER</requirements>
@@ -48,7 +64,7 @@
 			<p>Once, you can ask the DM one question relegated to a specific object, place or creature that you are trying to find. The DM then gives you one truthful answer that guides you in the direction of the thing you are looking for. You are not made aware of any dangers waiting on the path, nor does the answer you recieve take into account any changes that might as a result of an action taken by another player or NPC. Once you use this feature, you cannot do so again until 7 days have passed since you last used it.</p>
 			</description>
 		</sheet>
-	</element>
+	</element>  -->
 
 	<!-- Feat Unlocker -->
 	<element name="Feat Unlocker" type="Item" source="One Piece Homebrew" id="ID_OP_ITEM_FEAT_UNLOCKER">
@@ -64,7 +80,7 @@
 		<rules>
 			<grant type="Grants" id="ID_OP_GRANTS_FEAT_UNLOCKER" />
 		</rules>
-	</element>
+	</element>    
 
 	<element name="Feat Unlocker" type="Grants" source="One Piece Homebrew" id="ID_OP_GRANTS_FEAT_UNLOCKER" />
 	

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Human-Onepiece</name>
+		<description></description>
+		<author url="https://homebrewery.naturalcrit.com/share/ItlMSW6ztZTm">oneworldhd and Eiichiro Oda</author>
+		<update version="3.11.2">
+			<file name="race-human-onepiece.xml" url="https://homebrewery.naturalcrit.com/share/ItlMSW6ztZTm"/>
+		</update>
+	</info>
+	<element name="Human-Onepiece" type="Race" source="One Piece Homebrew" id="ID_OP_RACE_HUMAN">
+		<description>
+			<p class="flavor">In the world of One Piece, humans can be considered highly invasive and territorial to most other races and creatures. While there are many good-spirited humans out there, the World Government and Navy often tarnish the reputation of humans among non-humans. Due to this fact, most non-human races don't get along well with humans on average. However, there can very well be brotherhood among these races in certain circumstances, so long as compassion and friendship is shown.</p>
+			
+			<h4>CONQUERORS</h4>
+			<p>Humans will settle in and take control of just about anywhere they can reach. The exception to this rule may be places like Fish-man Island or Zou, which are too inconvenient and out-of-reach to settle on for most human civilizations. Most of the world is conquered and ruled by humans under the World Government.</p>
+				
+			<h4>GREATE KINGDOMS</h4>
+			<p>As humans have expanded over the centuries, they have established many large cities, kingdoms, and fortresses across various islands and continents. Human culture can also be very different depending on where you look. While some human settlements can be more open-minded and accepting, other places may be far less tolerant toward outsiders and different ideas or cultures.</p>
+
+			<h4>TRAITS</h4>
+			<p>
+				<span class="feature">Age.</span>Humans reach adulthood in their late teens and live less than a century.<br />
+				<span class="feature">Alignment.</span>There is no clear alignment that is consistent among all humans. Just about any alignment can be justified.<br />
+				<span class="feature">Size.</span>Humans in the One Piece World are typically 5-6 feet tall. Some can rest far outside this range, but your size will count as medium.<br />
+				<span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />		
+				<span class="feature">Languages.</span>You can speak, read, and write Common. Humans typically learn the languages of other peoples they deal with, including obscure dialects.<br />
+				
+				<span class="feature">Subraces.</span>Choose between standard, variant, kuja or giant.<br />
+			</p>        
+		</description>
+		<sheet>
+			<description>
+			<p>
+				<br />
+				You are of Medium size.	<br/>
+				</p>
+			</description>
+		</sheet>
+		<setters>
+			<set name="names" type="male">Ander, Blath, Bran, Frath, Geth, Lander, Luth, Malcer, Stor, Taman, Urth, Zoro</set>
+			<set name="names" type="female">Amafrey, Betha, Cefrey, Kethra, Mara, Olga, Robin, Silifrey, Westra</set>
+			<set name="names" type="surname">Brightwood, Helder, Hornraven, Lackman, Law, Monkey, Nico, Ronoroa, Stormwind, Windrivver</set>
+			<set name="names-format">{{name}} {{surname}}</set>
+			<set name="height" modifier="2d12">4'9"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+		<rules>
+			<stat  name= "innate speed" value="30" bonus="base"/>			
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Racial Trait" name="Human Subrace" id="ID_OP_RACIAL_TRAIT_HUMAN_SUBRACE" /> 
+			<grant type="Size" id="ID_SIZE_MEDIUM"/>
+		</rules>
+	</element>
+
+	
+	<element name="Human Subrace" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_HUMAN_SUBRACE">
+		<description>
+			<p>Choose between standard, variant, kuja or giant.<br /></p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Sub Race" name="Human Subrace" supports="Human-Onepiece" />
+		</rules>
+	</element>
+	
+	<element name="Standard Human" type="Sub Race" source="One Piece Homebrew" id="ID_OP_SUB_RACE_HUMAN_STANDARD">
+		<supports>Human-Onepiece</supports>
+		<description>
+			<p>While many humans vary in shape and size, your human character will have these traits.</p>  	
+			<p>
+				<span class="feature">Ability Score Increase.</span>Your ability scores each increase by 1.<br />
+			</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="strength" value="1" />
+			<stat name="dexterity" value="1" />
+			<stat name="constitution" value="1" />
+			<stat name="intelligence" value="1" />
+			<stat name="wisdom" value="1" />
+			<stat name="charisma" value="1" />
+		</rules>
+	</element>
+
+	<element name="Variant Human" type="Sub Race" source="One Piece Homebrew" id="ID_OP_SUB_RACE_HUMAN_VARIANT">
+		<supports>Human-Onepiece</supports>
+		<description>
+			<p>Some humans can be noticeably different in their abilities and skills.</p>  	
+			<p>
+				<span class="feature">Ability Score Increase.</span>Two different ability scores of your choice increase by 1.<br />
+				<span class="feature">Skills.</span>You gain proficiency in one skill of your choice.<br />
+				<span class="feature">Feat.</span>You gain one Character Feat of your choice that you meet the prerequisite for in **Chapter 6**. You may only choose a Haki-related feat if you receive DM permission.<br />
+			</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Racial Trait" name="Human Subrace" id="ID_OP_RACIAL_TRAIT_HUMAN_VARIANT_ASI" /> 
+			<grant type="Racial Trait" id="ID_OP_RACIAL_TRAIT_HUMAN_VARIANT_SKILL_PROFICIENCY"/>
+			<select type="Feat" name="Feat (Human-OnePiece Variant)" />
+		</rules>
+	</element>
+
+    <element name="Ability Score Improvement +1, +1" type="Ability Score Improvement" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_HUMAN_VARIANT_ASI">
+        <supports>Custom Ability Score Improvement Option</supports>
+        <description>
+            <p>You can increase two different scores by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1" number="2" supports="Custom Ability Score Increase 1" />
+        </rules>
+    </element>
+
+	<element name="Skill" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_HUMAN_VARIANT_SKILL_PROFICIENCY">
+		<description>
+			<p>You gain proficiency with one skill.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency" supports="Skill" />
+		</rules>
+	</element>
+
+
+	<element name="Giant Human" type="Sub Race" source="One Piece Homebrew" id="ID_OP_SUB_RACE_HUMAN_GIANT">
+		<supports>Human-Onepiece</supports>
+		<description>
+			<p>Very rarely, some humans may grow to be astonishingly larger than most others in the One Piece world, sometimes even doubling the average human height and weight.<br />
+				
+				<span class="feature">Ability Score Increase.</span>You increase your Strength score by 2 .<br />
+				<span class="feature">Size.</span>Human giants are between 7 and 8 feet tall and weigh between 280 and 340 pounds. Your size is Medium.<br />
+				<span class="feature">Natural Athlete.</span>You have proficiency in Strength (Athletics).<br />
+			    <span class="feature">Warrior Training.</span>You have proficiency with the Battleaxe, Handaxe, Light Hammer, Longsword, Club, and Spear.<br />
+				<span class="feature">Giant's Endurance.</span>You can focus yourself to occasionally shrug off injury. When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled, and reduce the damage by that total. After you use this trait, you can’t use it again until you finish a short or long rest.<br />
+				<span class="feature">Powerful Build.</span>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.<br />
+			</p> 
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="strength" value="2" alt="Giant Human"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Racial Trait" id="ID_OP_RACIAL_TRAIT_HUMAN_GIANT_WARRIOR_TRAINING" />
+			<grant type="Racial Trait" id="ID_OP_RACIAL_TRAIT_HUMAN_GIANT_GIANT_ENDURANCE" />
+			<grant type="Racial Trait" id="ID_OP_RACIAL_TRAIT_HUMAN_GIANT_POWERFUL_BUILD" />
+		</rules>
+	</element>
+
+	<element name="Warrior Training" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_HUMAN_GIANT_WARRIOR_TRAINING">
+		<description>
+			<p>You have proficiency with the Battleaxe, Handaxe, Light Hammer, Longsword, Club, and Spear.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHT_HAMMER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
+		</rules>
+	</element>
+
+	<element name="Giant's Endurance" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_HUMAN_GIANT_GIANT_ENDURANCE">
+		<description>
+			<p>You can focus yourself to occasionally shrug off injury. When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled, and reduce the damage by that total. After you use this trait, you can’t use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Short Rest">
+			<description>You can focus yourself to occasionally shrug off injury. When you take damage you can reduce the damage by 1d12 + {{constitution:modifier}}.</description>
+		</sheet>
+	</element>
+
+	<element name="Powerful Build" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_HUMAN_GIANT_POWERFUL_BUILD">
+		<description>
+			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet>
+			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+		</sheet>
+	</element>
+
+
+	<element name="Kuja Tribe" type="Sub Race" source="One Piece Homebrew" id="ID_OP_SUB_RACE_HUMAN_KUJA">
+		<supports>Human-Onepiece</supports>
+		<description>
+			<p>If your human character is female, you may choose to take this Kuja variant subrace.<br />
+				
+				<span class="feature">Ability Score Increase.</span>You increase your constitution, wisdom, or charisma score by 2. <br />
+				<span class="feature">Amazon Training.</span>You have proficiency with longbows,shortbows, shortswords and spears.<br />
+				<span class="feature">Beginner Haki.</span> You can choose to take the Color of Armament Training feat if you meet the prerequisite. <br />
+			</p>  			
+			<div class="reference">
+				<div element="ID_OP_FEAT_COLOR_OF_ARMAMENT_TRAINING" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>			
+			<select type="Racial Trait" name="Ability Score Increase" supports="Kuja ASI" />
+			<grant type="Proficiency" name ="Amazon Training" id="ID_INTERNAL_PROFICIENCY_GROUP_BOWS" />
+			<grant type="Proficiency" name ="Amazon Training" id="ID_INTERNAL_PROFICIENCY_GROUP_SPEARS" />
+			<grant type="Proficiency" name ="Amazon Training" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />			
+			<grant type="Feat" id="ID_OP_FEAT_COLOR_OF_ARMAMENT_TRAINING" />    <!--  COLOUR  british spelling  (╯°□°)╯︵ ┻━┻     ┬─┬ノ( º _ ºノ)  now i am calm   -->
+		</rules>
+	</element>
+
+	<element name="Constitution" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_HUMAN_KUJA_ASI_CONSTITUTION">
+		<compendium display="false" />
+		<supports>Kuja ASI</supports>
+		<description>
+			<p>Increase your Constitution by 2, to a maximum of 20.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="constitution" value="2" alt="Kuja ASI" />
+		</rules>
+	</element>
+
+	<element name="Wisdom" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_HUMAN_KUJA_ASI_WISDOM">
+		<compendium display="false" />
+		<supports>Kuja ASI</supports>
+		<description>
+			<p>Increase your Wisdom by 2, to a maximum of 20.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="wisdom" value="2" alt="Kuja ASI" />
+		</rules>
+	</element>
+
+	<element name="Charisma" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_HUMAN_KUJA_ASI_CHARISMA">
+		<compendium display="false" />
+		<supports>Kuja ASI</supports>
+		<description>
+			<p>Increase your Charisma by 2, to a maximum of 20.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="charisma" value="2" alt="Kuja ASI" />
+		</rules>
+	</element>
+
+	
+</elements>
+	
+	
+	
+	

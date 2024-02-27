@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="3.1.1">
-			<file name="source-onepiece.xml" url="https://homebrewery.naturalcrit.com/share/HkRwCRCxU"/>
+		<update version="3.11.2">
+			<file name="source-onepiece.xml" url="https://homebrewery.naturalcrit.com/share/ItlMSW6ztZTm"/>
 		</update>
 	</info>	
 	<element name="One Piece Homebrew" type="Source" source="Core" id="ID_OP_HOMEBREW">
 		<description>			
-			<![CDATA[<p><strong>This is an Homebrew Manual</strong></p><p>An unofficial 5e supplement for Eiichiro Oda's One Piece. Homebrew created by u/Mr-Silvers. Coded into Aurora Builder by Jollyproxi. Special thanks to: Nick "Dread Master" Vendel, Konard and mamawerecat</p>]]>
+			<![CDATA[<p><strong>This is an Homebrew Manual</strong></p><p>An unofficial 5e supplement for Eiichiro Oda's One Piece. Homebrew created by oneworldhd. Coded into Aurora Builder by K0dechi and Jollyproxi. Special thanks to: Nick "Dread Master" Vendel, Konard and mamawerecat</p>]]>
 		</description>
 		<setters>
 			<set name="abbreviation">OP</set>
-			<set name="url">https://homebrewery.naturalcrit.com/share/HkRwCRCxU</set>
-			<set name="author" abbreviation="OP" url="http://dnd.wizards.com">u/Mr-Silvers and Eiichiro Oda; KOdechi and Jollyproxi</set>
+			<set name="url">https://homebrewery.naturalcrit.com/share/ItlMSW6ztZTm</set>
+			<set name="author" abbreviation="OP" url="http://dnd.wizards.com">OneWorldHD and Eiichiro Oda; KOdechi and Jollyproxi</set>
 			<set name="official">false</set>
 			<set name="supplement">true</set>
-			<set name="release">20220619</set>
+			<set name="release">20240222</set>
 		</setters>
 	</element>
 </elements>
