@@ -127,7 +127,7 @@
 			<p>These fish-men are known to have wide side-fins and light-blue skin, moving at high speeds underwater. </p>
 			<p>  
 				<span class="feature">Ability Score Increase.</span> Your Dexterity score increases by 2.<br />   
-				<span class="feature">Underwater Acrobatics.</span>You gain proficiency in Dexteriry (Acrobatics). You have advantage on acrobatics check made while underwater.<br />
+				<span class="feature">Underwater Acrobatics.</span>You gain proficiency in Dexterity (Acrobatics). You have advantage on acrobatics check made while underwater.<br />
 				<span class="feature">Sea Glide.</span>You have a Swimming speed of 40 feet.<br />
 			</p>  
 		</description>
@@ -141,7 +141,7 @@
 
     <element name="Underwater Acrobatics" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_MANTA_RAY_UNDERWATER_ACROBATICS">
 		<description>
-			<p>You gain proficiency in Dexteriry (Acrobatics). You have advantage on acrobatics check made while underwater.</p>
+			<p>You gain proficiency in Dexterity (Acrobatics). You have advantage on acrobatics check made while underwater.</p>
 		</description>
 		<sheet>
 			<description>You have advantage on acrobatics check made while underwater.</description>
@@ -157,7 +157,7 @@
 			<p>Octopus fish-men tend to have six arms and red or brown-tinted skin, with a lot of flexibility with their multiple appendages. </p>
 			<p>     
 				<span class="feature">Ability Score Increase.</span> Your Strength and Dexterity scores both increase by 1.<br />   
-				<span class="feature">Deadly Precision.</span>You gain proficiency in one of the following: Dexteriry (Sleight of hand) or an Artisan's tool of your choice.<br />
+				<span class="feature">Deadly Precision.</span>You gain proficiency in one of the following: Dexterity (Sleight of hand) or an Artisan's tool of your choice.<br />
 				<span class="feature">Multi-armed</span>You have four additional arms, six in total. While you cannot efficiently wield weapons with these arms, you may use them to hold smaller items such as potions and trinkets. Additionally, you have advantage on grapple checks with your arms.<br />
 			</p>  
 		</description>
@@ -174,7 +174,7 @@
 
 	<element name="Deadly Precision" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_OCTOPUS_DEADLY_PRECISION">
 		<description>
-			<p>You gain proficiency in one of the following: Dexteriry (Sleight of hand) or an Artisan's tool of your choice.</p>
+			<p>You gain proficiency in one of the following: Dexterity (Sleight of hand) or an Artisan's tool of your choice.</p>
 		</description>
         <rules>
             <select type="Racial Trait" name="Deadly Precision Feature" supports="Octopus"/>         
