@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sky-Islander</name>
+		<description></description>
+		<author url="https://homebrewery.naturalcrit.com/share/ItlMSW6ztZTm">oneworldhd and Eiichiro Oda</author>
+		<update version="3.11.1">
+			<file name="race-fishman.xml" url="https://homebrewery.naturalcrit.com/share/ItlMSW6ztZTm"/>
+		</update>
+	</info>
+
+    <element name="Fishman" type="Race" source="One Piece Homebrew" id="ID_OP_RACE_SKY_ISLANDER">
+		<description>
+			<p class="flavor">Those who live up in the Sky Islands have adapted and adjusted to live in such an environment. There are three main factions that exist up here: Shandians, Birkans, and Skypieans. All three of these groups descended from a moon, sometimes referred to as "Fairy Vearth". On this moon, a great civilization existed named Shandoria. These three groups were a part of this civilization and were believed to have worked in unison.<br/> Centuries after leaving the moon, these races have split apart and can be considered mostly divided into different tribes. These tribes now live mostly on Sky Islands and form civilizations in the clouds with their own cultures and technology. Some use a seemingly magical power called Mantra, which is actually Observation Haki.<br/> Some sky islanders descent from the skies down to land, known as "Vearth" to them, and can interact with the various other races.<br/>  </p>
+		
+			<h4>SHANDIANS</h4>
+			<p>Once Shandians descended from the moon, they lived on a land-based island named Jaya. However, this island was blasted into the sky by a knockup stream, leaving the Shandians stranded in the sky for many centuries. Like the others that live on these sky islands, Shandians are known to grow wings on their backs. However, unlike the other groups, their clothing is similar to real-world native Americans. Additionally, they can often be seen with large tattoos decorating their bodies. Shandians fight as fierce and skilled warriors, surviving for many long centuries with these skills.<br/> In ancient times, Shandians fought in a great war against the twenty kingdoms on land. At the end of this war, they were defeated. However, they held on to the ruins of the golden city of Shandora and the Shandorian Golden Belfry Bell, which they now protect with their lives even after it was blasted into the sky long ago. They also protect a Poneglyph left to them by an ancient Great Kingdom they were allies with during the great war.<br/> </p>
+		
+			<h4>BIRKANS</h4>
+			<p>Although not much is known about this civilization, it does share some similarities with other Sky Island groups. Much like the other two groups, Birkans all grow wings on their backs. However, Birkans do have a unique appearance compared to the others. Birkans can sometimes appear to have goat-like features such as long goat-like ears growing alongside their regular human ears, and small horns.<br/> Additionally, many Birkans dress in long white robes and gowns, often resembling priests. Many birkans consider themselves divine in nature, and dress accordingly. Unfortunately, the island of Birka was destroyed many years ago, though many survivors still remain. Many Birkan survivors are gifted with strong mantra in combat.<br/> </p>
+				
+			<h4>SKYPIEANS</h4>
+			<p>Many Skypieans reside on the sky island known as Skypiea. This island is massive and contains various technologies that make use of Dials, which are found naturally around it. Many Skypieans have angel-like appearances and grow wings on their backs, similar to Birkans and Shandians. Additionally, their hair often resembles the antenna of an insect, their skin is far lighter than the other groups, and their clothes are far more basic.<br/> Skypiea is a grand island that has come to slowly resent outsiders due to the damage dealt to them from non-skypieans. They use a currency known as Extol in place of Belly (B). Skypieans all fully obey their great leader, known as "God".<br/> </p>
+
+			<h4>TRAITS</h4>
+
+			<p>
+				<span class="feature">Ability Score Increase.</span> Your dexterity score increases by 1.<br />
+				<span class="feature">Age.</span>Sky islanders reach adulthood in their teens and live for around a century.<br />
+                <span class="feature">Alignment.</span>Sky islanders vary in alignment, ranging from good to evil, lawful to chaotic, but are typically neutral in some way.<br />
+				<span class="feature">Size.</span>Sky islanders in the One Piece World are typically 5-6 feet tall. Some can rest far outside this range, but your size will count as medium.<br />
+				<span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />
+				<span class="feature">Languages.</span>Sky islanders can all speak and understand the universal spoken language of this world.<br />
+				<span class="feature">Protection of the Clouds.</span>You are able to form fluffy floating clouds around you to reduce the speed of your fall. You gain the ability to cast Feather Fall. Once you use this ability, you cannot use it again until you complete a Short or Long rest.<br />
+				<span class="feature">Dial Proficiency.</span>You innately understand dials that have came from sky islands and can carry one with you. Roll once on the Simple Dial Table in Chapter 5 to determine which one you start with.<br/>
+                <span class="feature">Subrace.</span>Shandian, Birkan, or Skypiean variants <br />
+			</p>        
+		</description>
+		<sheet display="false"/>
+		<setters>
+			<set name="names-format">{{name}} {{surname}}</set>
+			<set name="height" modifier="3d6">7'9"</set>
+			<set name="weight" modifier="2d4">100 lb.</set>
+		</setters>
+		<rules>
+            <grant type="Size" id="ID_SIZE_MEDIUM"/>
+			<stat name="dexterity" value="1" alt="Fishman"/>
+			<stat  name="innate speed" value="30" bonus="base"/>
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Racial Trait" name="Protection of the Clouds" id="ID_OP_RACIAL_TRAIT_SKY_ISLANDER_PROTECTION_OF_THE_CLOUDS" /> 
+			<grant type="Racial Trait" name="Dial Proficiency" id="ID_OP_RACIAL_TRAIT_SKY_ISLANDER_DIAL_PROFICIENCY" /> 
+            <grant type="Racial Trait" name="Fishman Subrace" id="ID_OP_RACIAL_TRAIT_SKY_ISLANDER_SUBRACE" /> 
+		</rules>
+	</element>
+
+
+    <element name="Protection of the Clouds" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_SKY_ISLANDER_PROTECTION_OF_THE_CLOUDS">
+        <description>
+            <p>You are able to form fluffy floating clouds around you to reduce the speed of your fall. You gain the ability to cast Feather Fall. Once you use this ability, you cannot use it again until you complete a Short or Long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Short Rest">
+            <description>You are able to form fluffy floating clouds around you to reduce the speed of your fall (feather fall).</description>
+        </sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" />
+		</rules>
+    </element>
+
+    <element name="Adapted to the Sea" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_ADAPTED_TO_THE_SEA">
+        <description>
+            <p>With the ability to adapt to extreme underwater depths, you have Resistance to cold damage.</p>
+
+            <h5>Aasimar Celestial Features</h5>
+			<table>
+				<thead>
+					<tr><td>d6</td><td>Celestial Feature</td></tr>
+				</thead>
+				<tr><td>1</td><td>A dusting of metallic, white, or charcoal freckles</td></tr>
+				<tr><td>2</td><td>Metallic, luminous, or dark eyes</td></tr>
+				<tr><td>3</td><td>Starkly colored hair</td></tr>
+				<tr><td>4</td><td>An unusual hue tinting your shadow</td></tr>
+				<tr><td>5</td><td>A ghostly halo crowning your head</td></tr>
+				<tr><td>6</td><td>Rainbows gleaming on your skin</td></tr>
+			</table>
+        </description>
+        <sheet>
+            <description>You have Resistance to cold damage. And can breathe air and water.</description>
+        </sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+    </element>
+
+    <element name="Fishman Subrace" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_SUBRACE">
+		<description>
+			<p>Breeding among fish-people resulted in four main subraces: Shark, Manta Ray, Octopus, or Smelt-Whiting variants.<br /></p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Sub Race" name="Fishman Subrace" supports="Fishman" />
+		</rules>
+	</element>
+
+
+    <element name="Shark" type="Sub Race" source="One Piece Homebrew" id="ID_OP_SUB_RACE_FISHMAN_SHARK">
+		<supports>Fishman</supports>
+		<description>
+			<p>These fish-men are known to have sharp shark-like teeth, light blue-tinted skin, large back fins, and extreme strength. </p>
+			<p>     
+				<span class="feature">Ability Score Increase.</span> Your Strength score increases by 2.<br />
+				<span class="feature">Apex Predtaor.</span>You gain proficiency in the Charisma (Intimidation).<br />
+				<span class="feature">Bite.</span>Your razor-sharp teeth are a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an Unarmed Strike.<br />
+			</p>  
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="strength" value="2" alt="Shark Fishman"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Racial Trait" id="ID_OP_RACIAL_TRAIT_FISHMAN_SHARK_BITE" />
+		</rules>
+	</element>
+
+
+    <element name="Bite" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_SHARK_BITE">
+		<description>
+			<p>Your razor-sharp teeth are a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an Unarmed Strike.</p>
+		</description>
+		<sheet>
+			<description> When you use your unarmed strikes, you deal 1d6 + {{strength:modifier}} piercing damage.</description>
+		</sheet>
+	</element>
+
+    <element name="Manta Ray" type="Sub Race" source="One Piece Homebrew" id="ID_OP_SUB_RACE_FISHMAN_MANTA_RAY">
+		<supports>Fishman</supports>
+		<description>
+			<p>These fish-men are known to have wide side-fins and light-blue skin, moving at high speeds underwater. </p>
+			<p>  
+				<span class="feature">Ability Score Increase.</span> Your Dexterity score increases by 2.<br />   
+				<span class="feature">Underwater Acrobatics.</span>You gain proficiency in Dexterity (Acrobatics). You have advantage on acrobatics check made while underwater.<br />
+				<span class="feature">Sea Glide.</span>You have a Swimming speed of 40 feet.<br />
+			</p>  
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="dexterity" value="2" alt="Manta Ray Fishman"/>
+			<stat name="innate speed:swim" value="5" />
+            <grant type="Racial Trait" id="ID_OP_RACIAL_TRAIT_FISHMAN_MANTA_RAY_UNDERWATER_ACROBATICS" />
+		</rules>
+	</element>
+
+    <element name="Underwater Acrobatics" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_MANTA_RAY_UNDERWATER_ACROBATICS">
+		<description>
+			<p>You gain proficiency in Dexterity (Acrobatics). You have advantage on acrobatics check made while underwater.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on acrobatics check made while underwater.</description>
+		</sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />           
+        </rules>
+	</element>
+
+    <element name="Octopus" type="Sub Race" source="One Piece Homebrew" id="ID_OP_SUB_RACE_FISHMAN_OCTOPUS">
+		<supports>Fishman</supports>
+		<description>
+			<p>Octopus fish-men tend to have six arms and red or brown-tinted skin, with a lot of flexibility with their multiple appendages. </p>
+			<p>     
+				<span class="feature">Ability Score Increase.</span> Your Strength and Dexterity scores both increase by 1.<br />   
+				<span class="feature">Deadly Precision.</span>You gain proficiency in one of the following: Dexterity (Sleight of hand) or an Artisan's tool of your choice.<br />
+				<span class="feature">Multi-armed</span>You have four additional arms, six in total. While you cannot efficiently wield weapons with these arms, you may use them to hold smaller items such as potions and trinkets. Additionally, you have advantage on grapple checks with your arms.<br />
+			</p>  
+		</description>
+		<sheet>
+			<description> You have up to four additional arms.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" alt="Octopus Fishman"/>
+			<stat name="dexterity" value="1" alt="Octopus Fishman"/>
+			<grant type="Racial Trait" id="ID_OP_RACIAL_TRAIT_FISHMAN_OCTOPUS_DEADLY_PRECISION" />
+			<grant type="Racial Trait" id="ID_OP_RACIAL_TRAIT_FISHMAN_OCTOPUS_MULTIARMED" />
+		</rules>
+	</element>
+
+	<element name="Deadly Precision" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_OCTOPUS_DEADLY_PRECISION">
+		<description>
+			<p>You gain proficiency in one of the following: Dexterity (Sleight of hand) or an Artisan's tool of your choice.</p>
+		</description>
+        <rules>
+            <select type="Racial Trait" name="Deadly Precision Feature" supports="Octopus"/>         
+        </rules>
+	</element>
+
+	<element name="Sleight of Hand" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_OCTOPUS_DEADLY_PRECISION_SOH">
+		<supports>Octopus</supports>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />       
+        </rules>
+	</element>    
+
+	<element name="Artisan's Tool Proficiency" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_OCTOPUS_DEADLY_PRECISION_ATP">
+		<supports>Octopus</supports>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ARTISANS_TOOLS" />         
+        </rules>
+	</element> 
+
+	<element name="Multi-armed" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_OCTOPUS_MULTIARMED">
+		<description>
+			<p>You have four additional arms, six in total. While you cannot efficiently wield weapons with these arms, you may use them to hold smaller items such as potions and trinkets. Additionally, you have advantage on grapple checks with your arms.</p>
+		</description>
+		<sheet>
+			<description>You have four additional arms, six in total. While you cannot efficiently wield weapons with these arms, you may use them to hold smaller items such as potions and trinkets. Additionally, you have advantage on grapple checks with your arms.</description>
+		</sheet>
+	</element>
+
+
+	<element name="Smelt-Whiting" type="Sub Race" source="One Piece Homebrew" id="ID_OP_SUB_RACE_SMELT_WHITING">
+		<supports>Fishman</supports>
+		<description>
+			<p>Smelt-whiting fish-men are known to have more dominant fish-like characteristics compared to other fish-men, and can spit water at their enemies. </p>
+			<p>     
+				<span class="feature">Ability Score Increase.</span> Your Charisma score increases by 2.<br />   
+				<span class="feature">Big-Mouthed.</span>You gain proficiency in either Charisma (Deception) or Charisma (Persuasion). <br />
+				<span class="feature">Multi-armed</span>You have four additional arms, six in total. While you cannot efficiently wield weapons with these arms, you may use them to hold smaller items such as potions and trinkets. Additionally, you have advantage on grapple checks with your arms.<br />
+			</p>  
+		</description>
+		<sheet>
+			<description> You have up to four additional arms.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="2" alt="Smelt-Whiting Fishman"/>
+			<grant type="Racial Trait" id="ID_OP_RACIAL_TRAIT_FISHMAN_SMELT_WHITING_BIG_MOUTHED" />
+			<grant type="Racial Trait" id="ID_OP_RACIAL_TRAIT_FISHMAN_SMELT_WHITING_HYDRO_CANNON" />
+		</rules>
+	</element>
+    
+	<element name="Big-Mouthed" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_SMELT_WHITING_BIG_MOUTHED">
+		<description>
+			<p>You gain proficiency in either Charisma (Deception) or Charisma (Persuasion).</p>
+		</description>
+        <rules>
+            <select type="Racial Trait" name="Big-Mouthed Feature" supports="Smelt-Whiting"/>         
+        </rules>
+	</element>
+
+	<element name="Deception" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_SMELT_WHITING_BIG_MOUTHED_DEC">
+		<supports>Smelt-Whiting</supports>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />       
+        </rules>
+	</element>    
+
+	<element name="Artisan's Tool Persuasion" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_SMELT_WHITING_BIG_MOUTHED_PER">
+		<supports>Smelt-Whiting</supports>
+        <rules>
+             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />      
+        </rules>
+	</element> 
+
+    <element name="Hydro Cannon" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_SMELT_WHITING_HYDRO_CANNON">
+		<description>
+			<p>You have the natural ability to shoot concentrated blasts of water out of your mouth. You can cast ray of frost with this trait. Starting at 3rd Level, you can cast Ice Knife with it. Once you Cast a Spell with this trait, you can't cast that spell with it again until you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells.</p>
+		</description>
+		<sheet>
+			<description>You have the natural ability to shoot concentrated blasts of water out of your mouth.</description>
+			<description>You can cast ray of frost with this trait. Charisma is your spellcasting ability for this spell.</description>
+			<description level="3">You can cast ray of frost with this trait. You can cast Ice Knife spell once per long rest. Charisma is your spellcasting ability for these spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_RRAY_OF_FROST" level="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_ICE_KNIFE" level="3" />
+		</rules>
+	</element>
+
+
+
+
+</elements>
