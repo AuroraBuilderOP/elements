@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Fishman</name>
+		<name>Sky-Islander</name>
 		<description></description>
 		<author url="https://homebrewery.naturalcrit.com/share/ItlMSW6ztZTm">oneworldhd and Eiichiro Oda</author>
 		<update version="3.11.1">
@@ -9,70 +9,79 @@
 		</update>
 	</info>
 
-    <element name="Fishman" type="Race" source="One Piece Homebrew" id="ID_OP_RACE_FISHMAN">
+    <element name="Fishman" type="Race" source="One Piece Homebrew" id="ID_OP_RACE_SKY_ISLANDER">
 		<description>
-			<p class="flavor">Fishmen, along with Merfolk, are one of the two races of humanoids that inhabit the sea. Fishmen are a roughly equal mix of Human and Fish, with human-like appendages and faces crossed with sea creatures such as sharks, blowfish, and other fish. They also have gills between their shoulders and necks, as well as often having webbed hands. Some species of fish-men may have extra appendages depending what on what species of fish they represent.<br/> Fishmen have both lungs and gills, which allow them to breathe underwater and on land. Their webbed fingers and agile bodies allow them to move quickly in water for as long as they want. Some fishmen use their naturally strong bodies and unique features as a reason to believe they are superior to Humans. Despite these beliefs, fish-men often end up being the ones to become enslaved and oppressed by Humans, which drives their hatred for them even further. However, not all fish-men think this way and can actually get along well with humans as equals.<br/></p>
+			<p class="flavor">Those who live up in the Sky Islands have adapted and adjusted to live in such an environment. There are three main factions that exist up here: Shandians, Birkans, and Skypieans. All three of these groups descended from a moon, sometimes referred to as "Fairy Vearth". On this moon, a great civilization existed named Shandoria. These three groups were a part of this civilization and were believed to have worked in unison.<br/> Centuries after leaving the moon, these races have split apart and can be considered mostly divided into different tribes. These tribes now live mostly on Sky Islands and form civilizations in the clouds with their own cultures and technology. Some use a seemingly magical power called Mantra, which is actually Observation Haki.<br/> Some sky islanders descent from the skies down to land, known as "Vearth" to them, and can interact with the various other races.<br/>  </p>
 		
-			<h4>HYBRIDS</h4>
-			<p>Fishmen have the ability to interbreed with other races, much like other humanoid races. It is not impossible to find half-humna or half-giant fishmen in places such as the grand line. Furthermore, fishmen can have children with merfolk, resulting in either a fishman or merfolk child being born.<br/> </p>
+			<h4>SHANDIANS</h4>
+			<p>Once Shandians descended from the moon, they lived on a land-based island named Jaya. However, this island was blasted into the sky by a knockup stream, leaving the Shandians stranded in the sky for many centuries. Like the others that live on these sky islands, Shandians are known to grow wings on their backs. However, unlike the other groups, their clothing is similar to real-world native Americans. Additionally, they can often be seen with large tattoos decorating their bodies. Shandians fight as fierce and skilled warriors, surviving for many long centuries with these skills.<br/> In ancient times, Shandians fought in a great war against the twenty kingdoms on land. At the end of this war, they were defeated. However, they held on to the ruins of the golden city of Shandora and the Shandorian Golden Belfry Bell, which they now protect with their lives even after it was blasted into the sky long ago. They also protect a Poneglyph left to them by an ancient Great Kingdom they were allies with during the great war.<br/> </p>
 		
-			<h4>OPPRESSED</h4>
-			<p>Like other non-human races, fish-men are the victims of world-wide oppression by humans. Due to this, many fish-men stay within the confines of fish-man island and only occasionally leave. Some evil fish-men have opted to be pirates to seek revenge against humanity. Unfortunately, several also end up as slaves under the world government. Even on islands not directly under world government jurisdiction, humans still treat fish-men very unfairly. For this reason, playing a fish-man can prove very different when visiting various human-inhabited islands around the sea.<br/> </p>
+			<h4>BIRKANS</h4>
+			<p>Although not much is known about this civilization, it does share some similarities with other Sky Island groups. Much like the other two groups, Birkans all grow wings on their backs. However, Birkans do have a unique appearance compared to the others. Birkans can sometimes appear to have goat-like features such as long goat-like ears growing alongside their regular human ears, and small horns.<br/> Additionally, many Birkans dress in long white robes and gowns, often resembling priests. Many birkans consider themselves divine in nature, and dress accordingly. Unfortunately, the island of Birka was destroyed many years ago, though many survivors still remain. Many Birkan survivors are gifted with strong mantra in combat.<br/> </p>
 				
-			<h4>DOMINATION</h4>
-			<p>Though they are often misunderstood, many fish-men do hold the belief that they should rule over all other fish in the sea. And due to the cruel treatment they receive from humans, some grow to also want to conquer and rule over humanity as a whole. This isn't true of all fish-men though, as many do exhibit the desire to co-exist with other races and species.<br/> </p>
-
-			<h4>EXTRAORDINARY STRENGTH</h4>
-			<p>As well as being born with bodies that provide natural weapons in battles, such as razor-sharp teeth, fish-men have incredibly strong bodies compared to average people. From birth, fish-men are ten times stronger than humans. Additionally, fish-men can be even more troublesome in underwater combat. Being even stronger underwater, they can easily devastate a human who isn't proficient at swimming. Unfortunately, this strength can be negated if a fish-man happens to be a Devil Fruit user.<br/> </p>
+			<h4>SKYPIEANS</h4>
+			<p>Many Skypieans reside on the sky island known as Skypiea. This island is massive and contains various technologies that make use of Dials, which are found naturally around it. Many Skypieans have angel-like appearances and grow wings on their backs, similar to Birkans and Shandians. Additionally, their hair often resembles the antenna of an insect, their skin is far lighter than the other groups, and their clothes are far more basic.<br/> Skypiea is a grand island that has come to slowly resent outsiders due to the damage dealt to them from non-skypieans. They use a currency known as Extol in place of Belly (B). Skypieans all fully obey their great leader, known as "God".<br/> </p>
 
 			<h4>TRAITS</h4>
+
 			<p>
-				<span class="feature">Ability Score Increase.</span> Your consitution score increases by 1.<br />
-				<span class="feature">Age.</span>Fishmen reach adulthood in their late teens and live around a century.<br />
-                <span class="feature">Alignment.</span>Most fish-men are lawful and many stay true to their values, though some lean toward being neutral. Fish-men can live in harmony with other sea creatures, but may turn violent against humans. For this reason, a fish-man can range from being good to evil.<br />
-				<span class="feature">Size.</span>Fish-men are between 7 and 8 feet tall and weigh between 280 and 340 pounds on average. Your size is medium.<br />
-				<span class="feature">Speed.</span>Your base walking speed is 30 feet, and you have a Swimming speed of 35 feet. <br />
-				<span class="feature">Languages.</span>You can speak, read, and write Common and one extra language of your choice. Fishmen typically learn the languages of other peoples they deal with, including obscure dialects.<br />
-				<span class="feature">Amphibious.</span>You can breathe air and water.<br />
-				<span class="feature">Underwater Athlete.</span>You have proficiency in the Strength (Athletics). While underwater, you face no penalties or disadvantage as a result of underwater combat rules.<br/>
-                <span class="feature">Adapted to the Sea.</span>With the ability to adapt to extreme underwater depths, you have Resistance to cold damage.<br/>
-                <span class="feature">Subrace.</span>Choose between: Shark, Manta Ray, Octopus, or Smelt-Whiting. <br />
+				<span class="feature">Ability Score Increase.</span> Your dexterity score increases by 1.<br />
+				<span class="feature">Age.</span>Sky islanders reach adulthood in their teens and live for around a century.<br />
+                <span class="feature">Alignment.</span>Sky islanders vary in alignment, ranging from good to evil, lawful to chaotic, but are typically neutral in some way.<br />
+				<span class="feature">Size.</span>Sky islanders in the One Piece World are typically 5-6 feet tall. Some can rest far outside this range, but your size will count as medium.<br />
+				<span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />
+				<span class="feature">Languages.</span>Sky islanders can all speak and understand the universal spoken language of this world.<br />
+				<span class="feature">Protection of the Clouds.</span>You are able to form fluffy floating clouds around you to reduce the speed of your fall. You gain the ability to cast Feather Fall. Once you use this ability, you cannot use it again until you complete a Short or Long rest.<br />
+				<span class="feature">Dial Proficiency.</span>You innately understand dials that have came from sky islands and can carry one with you. Roll once on the Simple Dial Table in Chapter 5 to determine which one you start with.<br/>
+                <span class="feature">Subrace.</span>Shandian, Birkan, or Skypiean variants <br />
 			</p>        
 		</description>
 		<sheet display="false"/>
 		<setters>
 			<set name="names-format">{{name}} {{surname}}</set>
 			<set name="height" modifier="3d6">7'9"</set>
-			<set name="weight" modifier="2d4">300 lb.</set>
+			<set name="weight" modifier="2d4">100 lb.</set>
 		</setters>
 		<rules>
             <grant type="Size" id="ID_SIZE_MEDIUM"/>
-			<stat name="constitution" value="1" alt="Fishman"/>
-			<stat  name= "innate speed" value="30" bonus="base"/>
-            <stat name="innate speed:swim" value="35" />	
+			<stat name="dexterity" value="1" alt="Fishman"/>
+			<stat  name="innate speed" value="30" bonus="base"/>
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
-            <grant type="Racial Trait" name="Underwater Athlete" id="ID_OP_RACIAL_TRAIT_FISHMAN_UNDRWATER_ATHLETE" /> 
-			<grant type="Racial Trait" name="Adapted to the Sea" id="ID_OP_RACIAL_TRAIT_FISHMAN_ADAPTED_TO_THE_SEA" /> 
-            <grant type="Racial Trait" name="Fishman Subrace" id="ID_OP_RACIAL_TRAIT_FISHMAN_SUBRACE" /> 
+            <grant type="Racial Trait" name="Protection of the Clouds" id="ID_OP_RACIAL_TRAIT_SKY_ISLANDER_PROTECTION_OF_THE_CLOUDS" /> 
+			<grant type="Racial Trait" name="Dial Proficiency" id="ID_OP_RACIAL_TRAIT_SKY_ISLANDER_DIAL_PROFICIENCY" /> 
+            <grant type="Racial Trait" name="Fishman Subrace" id="ID_OP_RACIAL_TRAIT_SKY_ISLANDER_SUBRACE" /> 
 		</rules>
 	</element>
 
 
-    <element name="Underwater Athlete" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_UNDRWATER_ATHLETE">
+    <element name="Protection of the Clouds" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_SKY_ISLANDER_PROTECTION_OF_THE_CLOUDS">
         <description>
-            <p>While underwater, you face no penalties or disadvantage as a result of underwater combat rules.</p>
+            <p>You are able to form fluffy floating clouds around you to reduce the speed of your fall. You gain the ability to cast Feather Fall. Once you use this ability, you cannot use it again until you complete a Short or Long rest.</p>
         </description>
-        <sheet>
-            <description>While underwater, you face no penalties or disadvantage as a result of underwater combat rules.</description>
+        <sheet action="Reaction" usage="1/Short Rest">
+            <description>You are able to form fluffy floating clouds around you to reduce the speed of your fall (feather fall).</description>
         </sheet>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEATHER_FALL" />
 		</rules>
     </element>
 
     <element name="Adapted to the Sea" type="Racial Trait" source="One Piece Homebrew" id="ID_OP_RACIAL_TRAIT_FISHMAN_ADAPTED_TO_THE_SEA">
         <description>
             <p>With the ability to adapt to extreme underwater depths, you have Resistance to cold damage.</p>
+
+            <h5>Aasimar Celestial Features</h5>
+			<table>
+				<thead>
+					<tr><td>d6</td><td>Celestial Feature</td></tr>
+				</thead>
+				<tr><td>1</td><td>A dusting of metallic, white, or charcoal freckles</td></tr>
+				<tr><td>2</td><td>Metallic, luminous, or dark eyes</td></tr>
+				<tr><td>3</td><td>Starkly colored hair</td></tr>
+				<tr><td>4</td><td>An unusual hue tinting your shadow</td></tr>
+				<tr><td>5</td><td>A ghostly halo crowning your head</td></tr>
+				<tr><td>6</td><td>Rainbows gleaming on your skin</td></tr>
+			</table>
         </description>
         <sheet>
             <description>You have Resistance to cold damage. And can breathe air and water.</description>

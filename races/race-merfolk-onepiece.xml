@@ -8,7 +8,7 @@
 			<file name="race-human-onepiece.xml" url="https://homebrewery.naturalcrit.com/share/ItlMSW6ztZTm"/>
 		</update>
 	</info>
-	<element name="Human-Onepiece" type="Race" source="One Piece Homebrew" id="ID_OP_RACE_HUMAN">
+	<element name="Human-Onepiece" type="Race" source="One Piece Homebrew" id="ID_OP_RACE_MERFOLK">
 		<description>
 			<p class="flavor">Merfolk, along with fish-men, are one of the two races of humanoids that inhabit the sea. Merfolk have the upper body of a human and the lower body of a fish. Both races are ruled by the undersea king, King Neptune.<br /> Merfolk have access to various skills while underwater, such as extremely fast swimming speeds, weapon proficiency, and the ability to communicate with many sea creatures. Very rarely, a mermaid can be born with the ability to speak with Sea Kings. Only a mermaid princess possesses this power, however. <br /></p>
 			
@@ -37,10 +37,7 @@
 				<span class="feature">Merfolk Training.</span>You have proficiency with the spear, Trident, and net.<br />
 				<span class="feature">Merfolk Combat.</span>Being trained in underwater combat, you can control the flow of water to attack your enemies (ice and cold damage is treated as water). You can cast Ray of Frost with this trait. Starting at 3rd Level, you can cast Ice Knife with it, and starting at 5th Level, you can also cast Rime's Binding Ice with it. Once you Cast a Spell with this trait, you can't cast that spell with it again until you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells.<br/>
 
-			</p>        
-			<div class="reference">
-				<div element="ID_OP_RACIAL_TRAIT_MERFOLK_SWARM_OF_FISH" />
-			</div>
+			</p>
         </description>
         <sheet display="false" />
         <setters>
